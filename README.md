@@ -157,6 +157,44 @@ Roles are Villager, Mafia, Doctor, and Detective. There is always one Doctor and
 
 **Winning.** Town wins when all mafia are dead. The mafia win when they are at least as many as the town.
 
+### Example: one round with 7 players
+
+Roles are random. Here Bee and Foo are the mafia.
+
+```mermaid
+flowchart TB
+    subgraph Table["Players (7)"]
+        direction LR
+        Ay["Ay<br/>Villager"]
+        Bee["Bee<br/>Mafia"]
+        Cee["Cee<br/>Doctor"]
+        Dee["Dee<br/>Villager"]
+        Ey["Ey<br/>Detective"]
+        Foo["Foo<br/>Mafia"]
+        Gi["Gi<br/>Villager"]
+    end
+
+    subgraph Night["Night (private)"]
+        direction TB
+        M["Bee and Foo chat, then vote on a kill"]
+        D["Cee protects one player"]
+        T["Ey checks one player: mafia or not"]
+    end
+
+    subgraph Day["Day (public)"]
+        direction TB
+        A["Deaths announced, role revealed"]
+        S["Everyone speaks, two rounds"]
+        V["Secret votes, revealed together, top vote is ejected"]
+        A --> S --> V
+    end
+
+    Table --> Night --> Day
+    Day -->|"nobody has won yet"| Night
+    Day -->|"all mafia dead"| Town(["Town wins"])
+    Day -->|"mafia at least as many as town"| Mob(["Mafia wins"])
+```
+
 ## How it works
 
 ```

@@ -21,6 +21,7 @@ Mafia and detective play is mostly sound. Villager play is the weak spot, becaus
 ![Telling the doctor their own conclusion removes the mistake](docs/images/chart_doctor_replay.svg)
 
 The doctor fix was tested by replaying real prompts, and is not yet adopted in the game itself.
+
 ## What you get
 
 * **A rules engine that does not use any AI.** It runs the night and day phases, resolves kills and saves, counts votes, and decides who won. It is deterministic for a given seed and is tested without any model calls.
@@ -67,74 +68,12 @@ The doctor fix was tested by replaying real prompts, and is not yet adopted in t
 ## Architecture
 
 ```mermaid
-flowchart TB
-    subgraph Entry["Entry points"]
-        run["run.py<br/>one game in the terminal"]
-        serve["serve.py<br/>viewer"]
-        batch["batch.py<br/>many games"]
-    end
-
-    subgraph Core["Game core (mafia/engine)"]
-        game["game.py<br/>phases and turn order"]
-        rules["rules.py<br/>actions, votes, win checks"]
-        state["state.py<br/>players, roles, events"]
-        vis["visibility.py<br/>who may see which event"]
-    end
-
-    subgraph Players["Players (mafia/agents)"]
-        llm["llm_agent.py<br/>prompts, parsing, shuffled lists"]
-        scripted["scripted.py<br/>random players for demos"]
-    end
-
-    client["llm/client.py<br/>rate limit, retries, disk cache"]
-    gemini[("Gemini API")]
-    setup["setup.py<br/>builds agents, loads .env"]
-    elog["eventlog.py"]
-    logs[/"logs/game_*.jsonl<br/>logs/trace_*.jsonl"/]
-
-    subgraph Web["Viewer"]
-        server["web/server.py<br/>HTTP and live stream"]
-        runner["web/runner.py<br/>runs one game at a time"]
-        ui["web/ index.html, app.js<br/>ring, chat, votes, replay"]
-    end
-
-    subgraph Eval["Quality tools"]
-        analysis["analysis.py"]
-        audit["audit.py<br/>leak audit"]
-        logic["logic.py<br/>hard checks"]
-        judge["judge.py<br/>judge model"]
-        ablate["ablate.py<br/>replay experiments"]
-        charts["charts.py + make_charts.py"]
-    end
-
-    run --> setup
-    batch --> setup
-    runner --> setup
-    serve --> server --> runner
-    setup --> llm
-    setup --> scripted
-    llm --> client --> gemini
-    runner --> game
-    batch --> game
-    run --> game
-    game --> rules --> state
-    game --> vis
-    game <-->|"asks for an action,<br/>sends only visible events"| llm
-    game <--> scripted
-    game --> elog --> logs
-    server -->|"saved games and live events"| ui
-    logs --> analysis
-    analysis --> audit
-    analysis --> logic
-    analysis --> judge
-    analysis --> ablate
-    judge --> client
-    ablate --> client
-    judge --> charts
-    analysis --> charts
+flowchart LR
+    LLM["Gemini players<br/>one prompt per decision"] <-->|"actions and visible events only"| Engine["Game engine<br/>rules, phases, secrecy"]
+    Engine --> Logs[("Game logs")]
+    Logs --> Viewer["Web viewer<br/>live and replay"]
+    Logs --> Quality["Quality checks<br/>leak audit, logic, judge"]
 ```
-
-The engine knows nothing about models. It asks each player for an action and gives them only the events their role may see, which is also what the leak audit checks afterwards. The viewer and the quality tools both work from the saved logs.
 
 ## Quick start
 
@@ -168,14 +107,14 @@ A 6 player game takes about 30 to 40 model calls. The free tier limits requests,
 
 Start it with `python serve.py` and open http://127.0.0.1:8765/. Opening the page while a game is running attaches you to that game.
 
-| Control | What it does |
-| --- | --- |
+| Control                    | What it does                                                                                                                                                                                  |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Full view and Mystery mode | Chosen in the lobby, and Mystery mode is the default. Full view shows everything. Mystery mode shows only what the players can see. Switching to full view during a game asks you to confirm. |
-| Thoughts | Shows or hides each player's private reasoning in full view. |
-| Play, step, and speed | Playback runs at reading pace. Speeds go from 0.5x up to Max. |
-| Timeline | Drag to any moment. Marks show nights, days, kills, ejections, and the end. |
-| Stop game | Ends a running game early. |
-| Animations | Follows your system reduce motion setting until you change it here. |
+| Thoughts                   | Shows or hides each player's private reasoning in full view.                                                                                                                                  |
+| Play, step, and speed      | Playback runs at reading pace. Speeds go from 0.5x up to Max.                                                                                                                                 |
+| Timeline                   | Drag to any moment. Marks show nights, days, kills, ejections, and the end.                                                                                                                   |
+| Stop game                  | Ends a running game early.                                                                                                                                                                    |
+| Animations                 | Follows your system reduce motion setting until you change it here.                                                                                                                           |
 
 Keyboard: **Space** plays or pauses, and the **left and right arrows** step through the game.
 
@@ -188,15 +127,15 @@ python run.py [--players 6..10] [--mafia N] [--seed N] [--model NAME] [--rpm N] 
 python serve.py [--port N] [--log-dir DIR] [--open]
 ```
 
-| Option | Meaning |
-| --- | --- |
-| `--players` | Number of players, from 6 to 10. |
-| `--mafia` | Override the mafia count. The default depends on the player count, see below. |
-| `--seed` | Makes role assignment and the first day's speaking order repeatable. The model's replies are not repeatable. |
-| `--model` | Model name for the LLM players. |
-| `--rpm` | Cap on requests per minute, to stay inside a free tier. |
-| `--random` | Use free random players and make no API calls. |
-| `--log-dir` | Where game logs are written. The default is `logs`. |
+| Option        | Meaning                                                                                                      |
+| ------------- | ------------------------------------------------------------------------------------------------------------ |
+| `--players` | Number of players, from 6 to 10.                                                                             |
+| `--mafia`   | Override the mafia count. The default depends on the player count, see below.                                |
+| `--seed`    | Makes role assignment and the first day's speaking order repeatable. The model's replies are not repeatable. |
+| `--model`   | Model name for the LLM players.                                                                              |
+| `--rpm`     | Cap on requests per minute, to stay inside a free tier.                                                      |
+| `--random`  | Use free random players and make no API calls.                                                               |
+| `--log-dir` | Where game logs are written. The default is`logs`.                                                         |
 
 The evaluation tools are described under [Measuring quality](#measuring-quality).
 
@@ -205,11 +144,13 @@ The evaluation tools are described under [Measuring quality](#measuring-quality)
 Roles are Villager, Mafia, Doctor, and Detective. There is always one Doctor and one Detective. The default mafia count is 1 for 6 players, 2 for 7 to 9 players, and 3 for 10 players. Players are named in seat order: Ay, Bee, Cee, Dee, Ey, Foo, Gi, Himothy, Ivy, and Jojo.
 
 **Night**
+
 1. The mafia chat in private if there are two or more of them, then vote on one target. If they disagree they vote again, up to three rounds, and a random choice breaks a final tie.
 2. The Doctor protects one player. A protected player survives a kill.
 3. The Detective checks one player and learns whether they are mafia.
 
 **Day**
+
 1. Deaths are announced. A dead player's role is revealed.
 2. Everyone speaks for two rounds, in an order that is shuffled each day.
 3. Everyone votes in secret. Votes are revealed together, and the player with the most votes is ejected. A tie ejects nobody.
@@ -250,14 +191,14 @@ python analyze.py logs/batch_new.json --baseline logs/batch_main.json
 python compare_judges.py logs/judge_batch_main.json logs/judge_other_batch_main.json
 ```
 
-| Tool | What it does |
-| --- | --- |
-| `batch.py` | Plays N games with consecutive seeds and saves a summary after every game, so an interrupted batch resumes. It stops after two failed games in a row. Options: `--games`, `--players`, `--mafia`, `--seed-start`, `--model`, `--rpm`, `--random`, `--no-cache`, `--summary`, `--log-dir`. |
-| `audit.py` | The leak audit over one or more batch summaries. Exits with an error if it finds a leak. |
-| `judge.py` | Has a judge model rate every key decision in a batch. Options: `--model` (default `gemini-3.5-flash`), `--max-games N` (judge only the first N seeds), `--rpm`, `--out`. It saves after each game and resumes. Use a different model from the players. |
-| `analyze.py` | Writes a report for a batch, leading with reasoning quality. Options: `--baseline` to compare with another batch, `--judge` and `--baseline-judge` to include judge verdicts, `--out`, `--log-dir`. |
-| `compare_judges.py` | How much two judges agree: same verdict, agreement on sound against not sound, and Cohen's kappa. |
-| `ablate.py` | Tests a prompt change by replaying real prompts from the saved games with and without it. See [Testing a fix by replay](#testing-a-fix-by-replay). Options: `doctor` or `villager`, `--samples`, `--model`, `--note-arm`, `--max-cases`, `--judge-model`, `--judge-pairs`, `--out`. |
+| Tool                  | What it does                                                                                                                                                                                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `batch.py`          | Plays N games with consecutive seeds and saves a summary after every game, so an interrupted batch resumes. It stops after two failed games in a row. Options:`--games`, `--players`, `--mafia`, `--seed-start`, `--model`, `--rpm`, `--random`, `--no-cache`, `--summary`, `--log-dir`. |
+| `audit.py`          | The leak audit over one or more batch summaries. Exits with an error if it finds a leak.                                                                                                                                                                                                                     |
+| `judge.py`          | Has a judge model rate every key decision in a batch. Options:`--model` (default `gemini-3.5-flash`), `--max-games N` (judge only the first N seeds), `--rpm`, `--out`. It saves after each game and resumes. Use a different model from the players.                                              |
+| `analyze.py`        | Writes a report for a batch, leading with reasoning quality. Options:`--baseline` to compare with another batch, `--judge` and `--baseline-judge` to include judge verdicts, `--out`, `--log-dir`.                                                                                                 |
+| `compare_judges.py` | How much two judges agree: same verdict, agreement on sound against not sound, and Cohen's kappa.                                                                                                                                                                                                            |
+| `ablate.py`         | Tests a prompt change by replaying real prompts from the saved games with and without it. See[Testing a fix by replay](#testing-a-fix-by-replay). Options: `doctor` or `villager`, `--samples`, `--model`, `--note-arm`, `--max-cases`, `--judge-model`, `--judge-pairs`, `--out`.          |
 
 The report covers the hard checks and the judge review first, then reliability, role secrecy, writing quality, and bias in night choices. Win rates are included but labelled as not a quality measure. A batch of 10 games takes roughly 30 to 60 minutes at the free tier rate.
 
@@ -274,11 +215,11 @@ python ablate.py villager --model gemini-3.1-flash-lite --samples 5 --max-cases 
 
 **Results so far**:
 
-| Weakness | What was tested | Result |
-| --- | --- | --- |
-| The doctor voted out a player their own protection had proved was town (2 of 19 doctor votes in the games) | A general rule in the system prompt | Mistake went from 14.8% to 7.8% of votes, not significant (p = 0.13). It fixed one of the two prompts where the mistake occurs and left the other untouched. |
-| | The doctor's own conclusion stated as a fact in their notes ("you protected X on a night when nobody died, so X is NOT mafia") | **16 of 108 votes to 0 of 108** (p = 0.00002). It fixed both prompts. |
-| Villagers' day votes rest on thin evidence (only 20.6% of villager decisions rated sound) | An instruction to name a concrete fact before voting, and never to invent one | A blind judge preferred the hinted reply in 7 of 7 decisive pairs (7 more were ties), and flagged no invented facts. A text pattern measure saw no change (59.1% against 53.8% concrete), and abstentions halved (24 to 12 of 90). |
+| Weakness                                                                                                   | What was tested                                                                                                                | Result                                                                                                                                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The doctor voted out a player their own protection had proved was town (2 of 19 doctor votes in the games) | A general rule in the system prompt                                                                                            | Mistake went from 14.8% to 7.8% of votes, not significant (p = 0.13). It fixed one of the two prompts where the mistake occurs and left the other untouched.                                                                       |
+|                                                                                                            | The doctor's own conclusion stated as a fact in their notes ("you protected X on a night when nobody died, so X is NOT mafia") | **16 of 108 votes to 0 of 108** (p = 0.00002). It fixed both prompts.                                                                                                                                                        |
+| Villagers' day votes rest on thin evidence (only 20.6% of villager decisions rated sound)                  | An instruction to name a concrete fact before voting, and never to invent one                                                  | A blind judge preferred the hinted reply in 7 of 7 decisive pairs (7 more were ties), and flagged no invented facts. A text pattern measure saw no change (59.1% against 53.8% concrete), and abstentions halved (24 to 12 of 90). |
 
 Neither fix is built into the game yet. The doctor note holds only what the doctor already knows, so it is a safe aid, but it does the inference for the model, not teaches it. The honest limits: the doctor result rests on two prompts, a replay is one decision and not a game, and the villager judge's criterion matches the instruction being tested. The next step for each is a full batch.
 

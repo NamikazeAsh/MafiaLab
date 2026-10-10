@@ -8,7 +8,7 @@ The project also measures how well the players reason. The question it asks is n
 
 ## Results at a glance
 
-Thirty real games were judged for logic, not wins. Full numbers, methods and caveats are in [docs/QUALITY_REPORT.md](docs/QUALITY_REPORT.md), including section 2.7, which lists what improved, what regressed, and what stayed about the same.
+Thirty real games were judged for logic, not wins.
 
 ![Headline results](docs/images/chart_headlines.svg)
 
@@ -29,7 +29,7 @@ The doctor fix was tested by replaying real prompts, and is not yet adopted in t
 * **A live and replay viewer.** Watch a game as it is generated, or replay any saved game with play, pause, step, speed control, and a timeline you can drag.
 * **Spoiler safe by default.** The lobby asks how you want to watch. Mystery mode is the default and hides roles, mafia chat, private thoughts, night actions, and even who won in the saved games list. Full view is one click away.
 * **A free demo mode.** Random players let you try the whole viewer without an API key or any cost.
-* **Tools to measure reasoning quality.** A batch runner, a leak audit that checks every prompt, hard logic checks, and a judge model that rates each key decision. The methodology and the findings are written up in [docs/QUALITY_REPORT.md](docs/QUALITY_REPORT.md).
+* **Tools to measure reasoning quality.** A batch runner, a leak audit that checks every prompt, hard logic checks, and a judge model that rates each key decision.
 
 ## Screenshots
 
@@ -189,7 +189,7 @@ python compare_judges.py logs/judge_batch_main.json logs/judge_other_batch_main.
 
 The report covers the hard checks and the judge review first, then reliability, role secrecy, writing quality, and bias in night choices. Win rates are included but labelled as not a quality measure. A batch of 10 games takes roughly 30 to 60 minutes at the free tier rate.
 
-The latest findings are in [docs/QUALITY_REPORT.md](docs/QUALITY_REPORT.md), which also has the full methodology, including the judge's instructions word for word and the weaknesses of the method. Running notes on every experiment are in [docs/DEVLOG.md](docs/DEVLOG.md). In the first 30 real games there were no information leaks and no invalid actions, genuine contradictions were rare, the one clear failure was a doctor ignoring what a blocked kill proves, and the main weakness was thin evidence in villagers' day votes.
+Running notes on every experiment are in [docs/DEVLOG.md](docs/DEVLOG.md). In the first 30 real games there were no information leaks and no invalid actions, genuine contradictions were rare, the one clear failure was a doctor ignoring what a blocked kill proves, and the main weakness was thin evidence in villagers' day votes.
 
 ### Testing a fix by replay
 
@@ -200,7 +200,7 @@ python ablate.py doctor --note-arm --samples 8
 python ablate.py villager --model gemini-3.1-flash-lite --samples 5 --max-cases 18 --judge-model gemini-3.8-flash --judge-pairs 18
 ```
 
-**Results so far** (the full method, tables, and the exact instructions are in [docs/QUALITY_REPORT.md](docs/QUALITY_REPORT.md), section 2.6):
+**Results so far**:
 
 | Weakness | What was tested | Result |
 | --- | --- | --- |
@@ -228,7 +228,7 @@ mafia/
   setup.py     builds agents, loads .env, holds the player names
   eventlog.py  JSON lines log writer
 web/           index.html, style.css, app.js, crewmate.js (the viewer)
-docs/          QUALITY_REPORT.md, DEVLOG.md, images/
+docs/          DEVLOG.md, images/
 tests/         engine, agents, web server, LLM client, batch, analysis, logic, audit, judge, replay experiments
 run.py         play one game in the terminal
 serve.py       start the viewer

@@ -64,6 +64,78 @@ The doctor fix was tested by replaying real prompts, and is not yet adopted in t
   <img src="docs/images/mobile.png" alt="Phone sized layout" width="28%">
 </p>
 
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph Entry["Entry points"]
+        run["run.py<br/>one game in the terminal"]
+        serve["serve.py<br/>viewer"]
+        batch["batch.py<br/>many games"]
+    end
+
+    subgraph Core["Game core (mafia/engine)"]
+        game["game.py<br/>phases and turn order"]
+        rules["rules.py<br/>actions, votes, win checks"]
+        state["state.py<br/>players, roles, events"]
+        vis["visibility.py<br/>who may see which event"]
+    end
+
+    subgraph Players["Players (mafia/agents)"]
+        llm["llm_agent.py<br/>prompts, parsing, shuffled lists"]
+        scripted["scripted.py<br/>random players for demos"]
+    end
+
+    client["llm/client.py<br/>rate limit, retries, disk cache"]
+    gemini[("Gemini API")]
+    setup["setup.py<br/>builds agents, loads .env"]
+    elog["eventlog.py"]
+    logs[/"logs/game_*.jsonl<br/>logs/trace_*.jsonl"/]
+
+    subgraph Web["Viewer"]
+        server["web/server.py<br/>HTTP and live stream"]
+        runner["web/runner.py<br/>runs one game at a time"]
+        ui["web/ index.html, app.js<br/>ring, chat, votes, replay"]
+    end
+
+    subgraph Eval["Quality tools"]
+        analysis["analysis.py"]
+        audit["audit.py<br/>leak audit"]
+        logic["logic.py<br/>hard checks"]
+        judge["judge.py<br/>judge model"]
+        ablate["ablate.py<br/>replay experiments"]
+        charts["charts.py + make_charts.py"]
+    end
+
+    run --> setup
+    batch --> setup
+    runner --> setup
+    serve --> server --> runner
+    setup --> llm
+    setup --> scripted
+    llm --> client --> gemini
+    runner --> game
+    batch --> game
+    run --> game
+    game --> rules --> state
+    game --> vis
+    game <-->|"asks for an action,<br/>sends only visible events"| llm
+    game <--> scripted
+    game --> elog --> logs
+    server -->|"saved games and live events"| ui
+    logs --> analysis
+    analysis --> audit
+    analysis --> logic
+    analysis --> judge
+    analysis --> ablate
+    judge --> client
+    ablate --> client
+    judge --> charts
+    analysis --> charts
+```
+
+The engine knows nothing about models. It asks each player for an action and gives them only the events their role may see, which is also what the leak audit checks afterwards. The viewer and the quality tools both work from the saved logs.
+
 ## Quick start
 
 You need Python 3.10 or newer. There is nothing to install, because the project uses only the standard library. A browser is needed only for the viewer.

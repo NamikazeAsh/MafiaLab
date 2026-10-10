@@ -1,4 +1,4 @@
-﻿# Mafia Simulator
+﻿# MafiaLab
 
 A game of Mafia played entirely by AI players, with a browser viewer so you can watch it unfold. The players are large language models that talk, bluff, scheme in a private night channel, and vote each other out. The viewer draws the game as a crew around a cafeteria table, in the style of Among Us.
 

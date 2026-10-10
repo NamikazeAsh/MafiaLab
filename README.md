@@ -315,7 +315,3 @@ The viewer is meant for your own machine. The server listens on 127.0.0.1 only. 
 * **A smaller preference for the earliest seat names** remained in night actions after the shuffle. The players have since been renamed, so it is not yet known whether it came from the old names or the seat order. Games played before the rename are not directly comparable to games after it.
 * **Personas are only a speaking style.** Earlier versions gave players attitudes such as paranoid or contrarian, and that made the town play worse, so styles now change only how a player writes.
 * **Only Gemini has been tested.** Other OpenAI compatible providers should work by changing the base URL and key, but that is unverified.
-
-## Credits
-
-The characters are original SVG drawings inspired by the look of Among Us. No official artwork is used. Among Us is a trademark of Innersloth.

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="304" viewBox="0 0 760 304" role="img" aria-labelledby="t d">
+<title id="t">Telling the doctor their own conclusion removes the mistake</title><desc id="d">Telling the doctor their own conclusion removes the mistake. No change (16 of 108 votes): 14.8%, 95% range 9.3% to 22.7%. General rule (8 of 103 votes): 7.8%, 95% range 4.0% to 14.6%. Own notes (0 of 108 votes): 0.0%, 95% range 0.0% to 3.4%. 19 real prompts, 8 fresh replies each. All 16 mistakes came from 2 prompts, and the rule fixed only one of them.</desc>
+<style>
+:root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7; --accent:#2a78d6; --accent2:#eb6834; --border:rgba(11,11,11,.10); }
+@media (prefers-color-scheme: dark) {
+  :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835; --accent:#3987e5; --accent2:#d95926; --border:rgba(255,255,255,.10); }
+}
+text { font-family:system-ui, -apple-system, "Segoe UI", sans-serif; }
+.h { fill:var(--ink); font-size:16px; font-weight:600; }
+.sub { fill:var(--ink2); font-size:12.5px; }
+.lab { fill:var(--ink); font-size:13px; }
+.lab2 { fill:var(--ink2); font-size:12px; }
+.mut { fill:var(--muted); font-size:11px; }
+.val { fill:var(--ink); font-size:12.5px; font-weight:600; }
+.big { fill:var(--ink); font-size:30px; font-weight:600; }
+.grid { stroke:var(--grid); stroke-width:1; }
+.axis { stroke:var(--axis); stroke-width:1; }
+</style>
+<rect x=".5" y=".5" width="759" height="303" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+<text class="h" x="20" y="30">Telling the doctor their own conclusion removes the mistake</text>
+<text class="sub" x="20" y="50">Share of the doctor&#x27;s votes that went to a player their own protection had proved was town (95% range)</text>
+<line class="grid" x1="196.0" y1="76" x2="196.0" y2="240"/>
+<text class="mut" x="196.0" y="258" text-anchor="middle">0%</text>
+<line class="grid" x1="270.8" y1="76" x2="270.8" y2="240"/>
+<text class="mut" x="270.8" y="258" text-anchor="middle">5%</text>
+<line class="grid" x1="345.6" y1="76" x2="345.6" y2="240"/>
+<text class="mut" x="345.6" y="258" text-anchor="middle">10%</text>
+<line class="grid" x1="420.4" y1="76" x2="420.4" y2="240"/>
+<text class="mut" x="420.4" y="258" text-anchor="middle">15%</text>
+<line class="grid" x1="495.2" y1="76" x2="495.2" y2="240"/>
+<text class="mut" x="495.2" y="258" text-anchor="middle">20%</text>
+<line class="grid" x1="570.0" y1="76" x2="570.0" y2="240"/>
+<text class="mut" x="570.0" y="258" text-anchor="middle">25%</text>
+<line class="axis" x1="196" y1="76" x2="196" y2="240"/>
+<text class="lab" x="20" y="109.0">No change</text>
+<text class="mut" x="20" y="124.0">16 of 108 votes</text>
+<path d="M196,99.0 H413.6 Q417.6,99.0 417.6,103.0 V117.0 Q417.6,121.0 413.6,121.0 H196 Z" fill="var(--muted)"><title>No change 14.8%</title></path>
+<line x1="335.1" y1="110.0" x2="535.6" y2="110.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<line x1="335.1" y1="105.0" x2="335.1" y2="115.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<line x1="535.6" y1="105.0" x2="535.6" y2="115.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<text class="val" x="545.6" y="114.5">14.8%</text>
+<text class="lab" x="20" y="161.0">General rule</text>
+<text class="mut" x="20" y="176.0">8 of 103 votes</text>
+<path d="M196,151.0 H308.2 Q312.2,151.0 312.2,155.0 V169.0 Q312.2,173.0 308.2,173.0 H196 Z" fill="var(--muted)"><title>General rule 7.8%</title></path>
+<line x1="255.8" y1="162.0" x2="414.4" y2="162.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<line x1="255.8" y1="157.0" x2="255.8" y2="167.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<line x1="414.4" y1="157.0" x2="414.4" y2="167.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<text class="val" x="424.4" y="166.5">7.8%</text>
+<text class="lab" x="20" y="213.0">Own notes</text>
+<text class="mut" x="20" y="228.0">0 of 108 votes</text>
+<circle cx="196" cy="214.0" r="5" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"><title>Own notes 0.0%</title></circle>
+<line x1="196.0" y1="214.0" x2="246.9" y2="214.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<line x1="196.0" y1="209.0" x2="196.0" y2="219.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<line x1="246.9" y1="209.0" x2="246.9" y2="219.0" stroke="var(--ink2)" stroke-width="1.5"/>
+<text class="val" x="256.9" y="218.5">0.0%</text>
+<text class="mut" x="20" y="282">19 real prompts, 8 fresh replies each. All 16 mistakes came from 2 prompts, and the rule fixed only one of them.</text>
+</svg>

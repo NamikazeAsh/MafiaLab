@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="326" viewBox="0 0 760 326" role="img" aria-labelledby="t d">
+<title id="t">How each role&#x27;s decisions were rated</title><desc id="d">How each role&#x27;s decisions were rated. Villager (102 decisions): sound 20.6%, weak 76.5%, illogical 2.9%. Doctor (93 decisions): sound 72.0%, weak 24.7%, illogical 3.2%. Detective (80 decisions): sound 78.8%, weak 21.2%, illogical 0.0%. Mafia (115 decisions): sound 98.3%, weak 0.9%, illogical 0.9%.</desc>
+<style>
+:root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7; --accent:#2a78d6; --accent2:#eb6834; --border:rgba(11,11,11,.10); }
+@media (prefers-color-scheme: dark) {
+  :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835; --accent:#3987e5; --accent2:#d95926; --border:rgba(255,255,255,.10); }
+}
+text { font-family:system-ui, -apple-system, "Segoe UI", sans-serif; }
+.h { fill:var(--ink); font-size:16px; font-weight:600; }
+.sub { fill:var(--ink2); font-size:12.5px; }
+.lab { fill:var(--ink); font-size:13px; }
+.lab2 { fill:var(--ink2); font-size:12px; }
+.mut { fill:var(--muted); font-size:11px; }
+.val { fill:var(--ink); font-size:12.5px; font-weight:600; }
+.big { fill:var(--ink); font-size:30px; font-weight:600; }
+.grid { stroke:var(--grid); stroke-width:1; }
+.axis { stroke:var(--axis); stroke-width:1; }
+</style>
+<rect x=".5" y=".5" width="759" height="325" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+<text class="h" x="20" y="30">How each role&#x27;s decisions were rated</text>
+<text class="sub" x="20" y="50">Share of 390 decisions in 30 games, rated against only what the player knew</text>
+<rect x="20" y="66" width="14" height="14" rx="3" fill="#0ca30c"/>
+<path d="M3 7.5 L6 10.5 L11 4" transform="translate(20,66)" fill="none" stroke="#0b0b0b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="lab2" x="40" y="77.5">sound</text>
+<rect x="99.6" y="66" width="14" height="14" rx="3" fill="#fab219"/>
+<path d="M3.5 7 H10.5" transform="translate(99.6,66)" fill="none" stroke="#0b0b0b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="lab2" x="119.6" y="77.5">weak</text>
+<rect x="172.48" y="66" width="14" height="14" rx="3" fill="#d03b3b"/>
+<path d="M3.8 3.8 L10.2 10.2 M10.2 3.8 L3.8 10.2" transform="translate(172.48,66)" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text class="lab2" x="192.48" y="77.5">illogical</text>
+<line class="grid" x1="176.0" y1="96" x2="176.0" y2="288"/>
+<text class="mut" x="176.0" y="306" text-anchor="middle">0%</text>
+<line class="grid" x1="309.0" y1="96" x2="309.0" y2="288"/>
+<text class="mut" x="309.0" y="306" text-anchor="middle">25%</text>
+<line class="grid" x1="442.0" y1="96" x2="442.0" y2="288"/>
+<text class="mut" x="442.0" y="306" text-anchor="middle">50%</text>
+<line class="grid" x1="575.0" y1="96" x2="575.0" y2="288"/>
+<text class="mut" x="575.0" y="306" text-anchor="middle">75%</text>
+<line class="grid" x1="708.0" y1="96" x2="708.0" y2="288"/>
+<text class="mut" x="708.0" y="306" text-anchor="middle">100%</text>
+<line class="axis" x1="176" y1="96" x2="176" y2="288"/>
+<text class="lab" x="20" y="126.0">Villager</text>
+<text class="mut" x="20" y="141.0">102 decisions</text>
+<rect x="176.0" y="116.0" width="108.6" height="22" fill="#0ca30c"><title>sound 20.6%</title></rect>
+<text class="val" x="230.3" y="131.0" text-anchor="middle" style="fill:#0b0b0b">20.6%</text>
+<rect x="286.6" y="116.0" width="405.0" height="22" fill="#fab219"><title>weak 76.5%</title></rect>
+<text class="val" x="489.1" y="131.0" text-anchor="middle" style="fill:#0b0b0b">76.5%</text>
+<path d="M693.6,116.0 H704.0 Q708.0,116.0 708.0,120.0 V134.0 Q708.0,138.0 704.0,138.0 H693.6 Z" fill="#d03b3b"><title>illogical 2.9%</title></path>
+<text class="val" x="714.0" y="131.0">2.9%</text>
+<text class="lab" x="20" y="172.0">Doctor</text>
+<text class="mut" x="20" y="187.0">93 decisions</text>
+<rect x="176.0" y="162.0" width="382.0" height="22" fill="#0ca30c"><title>sound 72.0%</title></rect>
+<text class="val" x="367.0" y="177.0" text-anchor="middle" style="fill:#0b0b0b">72.0%</text>
+<rect x="560.0" y="162.0" width="129.4" height="22" fill="#fab219"><title>weak 24.7%</title></rect>
+<text class="val" x="624.7" y="177.0" text-anchor="middle" style="fill:#0b0b0b">24.7%</text>
+<path d="M691.4,162.0 H703.5 Q707.5,162.0 707.5,166.0 V180.0 Q707.5,184.0 703.5,184.0 H691.4 Z" fill="#d03b3b"><title>illogical 3.2%</title></path>
+<text class="val" x="713.5" y="177.0">3.2%</text>
+<text class="lab" x="20" y="218.0">Detective</text>
+<text class="mut" x="20" y="233.0">80 decisions</text>
+<rect x="176.0" y="208.0" width="418.2" height="22" fill="#0ca30c"><title>sound 78.8%</title></rect>
+<text class="val" x="385.1" y="223.0" text-anchor="middle" style="fill:#0b0b0b">78.8%</text>
+<path d="M596.2,208.0 H704.0 Q708.0,208.0 708.0,212.0 V226.0 Q708.0,230.0 704.0,230.0 H596.2 Z" fill="#fab219"><title>weak 21.2%</title></path>
+<text class="val" x="652.1" y="223.0" text-anchor="middle" style="fill:#0b0b0b">21.2%</text>
+<text class="lab" x="20" y="264.0">Mafia</text>
+<text class="mut" x="20" y="279.0">115 decisions</text>
+<rect x="176.0" y="254.0" width="522.0" height="22" fill="#0ca30c"><title>sound 98.3%</title></rect>
+<text class="val" x="437.0" y="269.0" text-anchor="middle" style="fill:#0b0b0b">98.3%</text>
+<rect x="700.0" y="254.0" width="2.8" height="22" fill="#fab219"><title>weak 0.9%</title></rect>
+<path d="M704.7,254.0 H706.6 Q708.5,254.0 708.5,255.9 V274.1 Q708.5,276.0 706.6,276.0 H704.7 Z" fill="#d03b3b"><title>illogical 0.9%</title></path>
+<text class="val" x="714.5" y="269.0">0.9%</text>
+</svg>

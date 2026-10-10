@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="350" viewBox="0 0 760 350" role="img" aria-labelledby="t d">
+<title id="t">Shuffling fixed list position bias for one model, not the other</title><desc id="d">Shuffling fixed list position bias for one model, not the other. Detective check: 84.6% before, 29.4% after, 18.8% for 3.1 lite, shuffled, chance 22.2%. Mafia kill: 55.6% before, 33.3% after, 57.9% for 3.1 lite, shuffled, chance 27.1%. Doctor protection: 37.5% before, 13.6% after, 21.1% for 3.1 lite, shuffled, chance 20.2%. Day vote: 28.6% before, 31.7% after, 29.7% for 3.1 lite, shuffled, chance 28.3%.</desc>
+<style>
+:root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7; --accent:#2a78d6; --accent2:#eb6834; --border:rgba(11,11,11,.10); }
+@media (prefers-color-scheme: dark) {
+  :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835; --accent:#3987e5; --accent2:#d95926; --border:rgba(255,255,255,.10); }
+}
+text { font-family:system-ui, -apple-system, "Segoe UI", sans-serif; }
+.h { fill:var(--ink); font-size:16px; font-weight:600; }
+.sub { fill:var(--ink2); font-size:12.5px; }
+.lab { fill:var(--ink); font-size:13px; }
+.lab2 { fill:var(--ink2); font-size:12px; }
+.mut { fill:var(--muted); font-size:11px; }
+.val { fill:var(--ink); font-size:12.5px; font-weight:600; }
+.big { fill:var(--ink); font-size:30px; font-weight:600; }
+.grid { stroke:var(--grid); stroke-width:1; }
+.axis { stroke:var(--axis); stroke-width:1; }
+</style>
+<rect x=".5" y=".5" width="759" height="349" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+<text class="h" x="20" y="30">Shuffling fixed list position bias for one model, not the other</text>
+<text class="sub" x="20" y="50">How often the choice went to the name listed first in the prompt</text>
+<circle cx="26" cy="73" r="5" fill="var(--muted)" stroke="var(--surface)" stroke-width="2"/>
+<text class="lab2" x="38" y="77">before the shuffle</text>
+<circle cx="188.96" cy="73" r="5" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"/>
+<text class="lab2" x="200.96" y="77">after the shuffle</text>
+<circle cx="345.20000000000005" cy="73" r="5" fill="var(--accent2)" stroke="var(--surface)" stroke-width="2"/>
+<text class="lab2" x="357.20000000000005" y="77">3.1 lite, shuffled</text>
+<line x1="508.1600000000001" y1="66" x2="508.1600000000001" y2="80" stroke="var(--ink)" stroke-width="2"/>
+<text class="lab2" x="520.1600000000001" y="77">chance</text>
+<line class="grid" x1="196.0" y1="102" x2="196.0" y2="312"/>
+<text class="mut" x="196.0" y="330" text-anchor="middle">0%</text>
+<line class="grid" x1="299.5" y1="102" x2="299.5" y2="312"/>
+<text class="mut" x="299.5" y="330" text-anchor="middle">25%</text>
+<line class="grid" x1="403.0" y1="102" x2="403.0" y2="312"/>
+<text class="mut" x="403.0" y="330" text-anchor="middle">50%</text>
+<line class="grid" x1="506.5" y1="102" x2="506.5" y2="312"/>
+<text class="mut" x="506.5" y="330" text-anchor="middle">75%</text>
+<line class="grid" x1="610.0" y1="102" x2="610.0" y2="312"/>
+<text class="mut" x="610.0" y="330" text-anchor="middle">100%</text>
+<line class="axis" x1="196" y1="102" x2="196" y2="312"/>
+<text class="lab" x="20" y="137.0">Detective check</text>
+<line x1="546.2" y1="133.0" x2="317.7" y2="133.0" stroke="var(--muted)" stroke-width="2" stroke-linecap="round"/>
+<line x1="287.9" y1="124.0" x2="287.9" y2="142.0" stroke="var(--ink)" stroke-width="2"><title>chance 22.2%</title></line>
+<circle cx="546.2" cy="133.0" r="5.5" fill="var(--muted)" stroke="var(--surface)" stroke-width="2"><title>before 84.6%</title></circle>
+<circle cx="317.7" cy="133.0" r="5.5" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"><title>after 29.4%</title></circle>
+<circle cx="273.8" cy="133.0" r="5.5" fill="var(--accent2)" stroke="var(--surface)" stroke-width="2"><title>3.1 lite, shuffled 18.8%</title></circle>
+<text class="mut" x="632" y="153.0">3.1 lite, shuffled: 19%</text>
+<text class="val" x="632" y="137.0">85% to 29%</text>
+<text class="lab" x="20" y="187.0">Mafia kill</text>
+<line x1="426.2" y1="183.0" x2="333.9" y2="183.0" stroke="var(--muted)" stroke-width="2" stroke-linecap="round"/>
+<line x1="308.2" y1="174.0" x2="308.2" y2="192.0" stroke="var(--ink)" stroke-width="2"><title>chance 27.1%</title></line>
+<circle cx="426.2" cy="183.0" r="5.5" fill="var(--muted)" stroke="var(--surface)" stroke-width="2"><title>before 55.6%</title></circle>
+<circle cx="333.9" cy="183.0" r="5.5" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"><title>after 33.3%</title></circle>
+<circle cx="435.7" cy="183.0" r="5.5" fill="var(--accent2)" stroke="var(--surface)" stroke-width="2"><title>3.1 lite, shuffled 57.9%</title></circle>
+<text class="mut" x="632" y="203.0">3.1 lite, shuffled: 58%</text>
+<text class="val" x="632" y="187.0">56% to 33%</text>
+<text class="lab" x="20" y="237.0">Doctor protection</text>
+<line x1="351.2" y1="233.0" x2="252.3" y2="233.0" stroke="var(--muted)" stroke-width="2" stroke-linecap="round"/>
+<line x1="279.6" y1="224.0" x2="279.6" y2="242.0" stroke="var(--ink)" stroke-width="2"><title>chance 20.2%</title></line>
+<circle cx="351.2" cy="233.0" r="5.5" fill="var(--muted)" stroke="var(--surface)" stroke-width="2"><title>before 37.5%</title></circle>
+<circle cx="252.3" cy="233.0" r="5.5" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"><title>after 13.6%</title></circle>
+<circle cx="283.4" cy="233.0" r="5.5" fill="var(--accent2)" stroke="var(--surface)" stroke-width="2"><title>3.1 lite, shuffled 21.1%</title></circle>
+<text class="mut" x="632" y="253.0">3.1 lite, shuffled: 21%</text>
+<text class="val" x="632" y="237.0">38% to 14%</text>
+<text class="lab" x="20" y="287.0">Day vote</text>
+<line x1="314.4" y1="283.0" x2="327.2" y2="283.0" stroke="var(--muted)" stroke-width="2" stroke-linecap="round"/>
+<line x1="313.2" y1="274.0" x2="313.2" y2="292.0" stroke="var(--ink)" stroke-width="2"><title>chance 28.3%</title></line>
+<circle cx="314.4" cy="283.0" r="5.5" fill="var(--muted)" stroke="var(--surface)" stroke-width="2"><title>before 28.6%</title></circle>
+<circle cx="327.2" cy="283.0" r="5.5" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"><title>after 31.7%</title></circle>
+<circle cx="319.0" cy="283.0" r="5.5" fill="var(--accent2)" stroke="var(--surface)" stroke-width="2"><title>3.1 lite, shuffled 29.7%</title></circle>
+<text class="mut" x="632" y="303.0">3.1 lite, shuffled: 30%</text>
+<text class="val" x="632" y="287.0">29% to 32%</text>
+</svg>

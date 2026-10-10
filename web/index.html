@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mafia Viewer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 120'%3E%3Cpath d='M22 50C22 22 38 10 54 10C72 10 82 26 82 50L82 96Q82 106 72 106L62 106Q56 106 56 98L56 92L48 92L48 98Q48 106 40 106L32 106Q22 106 22 96Z' fill='%23d6242a' stroke='%2314141c' stroke-width='5'/%3E%3Crect x='44' y='26' width='36' height='26' rx='12' fill='%239fe6ff' stroke='%2314141c' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand" id="brand" title="Home">
+    <span class="brand-crew" id="brand-crew"></span>
+    <span class="brand-name">MAFIA</span>
+    <span class="brand-sub">simulator</span>
+  </div>
+  <div class="grow"></div>
+  <label class="check inline" title="Follows your system setting until you change it here">
+    <input type="checkbox" id="chk-motion"><span>Animations</span>
+  </label>
+</header>
+
+<main id="home" class="view">
+  <section class="panel view-choice" id="view-choice">
+    <div class="vc-text">
+      <h2>How do you want to watch?</h2>
+      <p class="hint">Mystery mode hides roles, mafia chat, private thoughts, night actions, and who won, so you can guess along. Pick full view only if nobody watching minds spoilers.</p>
+    </div>
+    <div class="choice" role="radiogroup" aria-label="Viewing mode">
+      <button type="button" class="choice-btn" id="home-mystery" role="radio" aria-checked="false">
+        <b>Mystery mode</b><span>Secrets stay hidden. Best for guessing along.</span>
+      </button>
+      <button type="button" class="choice-btn" id="home-full" role="radio" aria-checked="false">
+        <b>Full view</b><span>Spoilers on. Shows every role and thought.</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="panel" id="new-game">
+    <h2>New game</h2>
+    <form id="start-form" autocomplete="off">
+      <div class="field-row">
+        <label>Players
+          <select id="f-players">
+            <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+        </label>
+        <label>Mafia
+          <select id="f-mafia">
+            <option value="">Auto</option>
+            <option>1</option><option>2</option><option>3</option>
+          </select>
+        </label>
+        <label>Seed
+          <input id="f-seed" type="number" min="0" placeholder="random">
+        </label>
+      </div>
+      <label class="check">
+        <input type="checkbox" id="f-random" checked>
+        <span>Free demo with random players (no API calls)</span>
+      </label>
+      <div class="field-row random-only">
+        <label>Demo pace
+          <select id="f-delay">
+            <option value="0">Instant</option>
+            <option value="0.15" selected>Fast (watch it live)</option>
+            <option value="0.5">Slow</option>
+          </select>
+        </label>
+      </div>
+      <div class="field-row llm-only">
+        <label>Model
+          <input id="f-model" type="text" value="gemini-3.5-flash-lite">
+        </label>
+        <label>Requests per minute
+          <input id="f-rpm" type="number" min="1" max="600" value="10">
+        </label>
+      </div>
+      <p class="hint llm-only">Real games use your Gemini key from the .env file. Free tier limits apply, so a game takes several minutes.</p>
+      <p id="key-hint" class="hint hidden">No Gemini key found, so demo players are selected. They pick random moves and their lines are placeholders like "I am Ay, day 1". Add GEMINI_API_KEY to the .env file and restart the server to play with AI.</p>
+      <div id="form-error" class="form-error hidden" role="alert"></div>
+      <div class="form-actions">
+        <button type="submit" class="btn primary" id="btn-start">Start game</button>
+        <button type="button" class="btn ghost hidden" id="btn-watch">Watch running game</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="panel" id="saved-games">
+    <div class="panel-head">
+      <h2>Saved games</h2>
+      <button class="btn ghost small" id="btn-refresh" type="button">Refresh</button>
+    </div>
+    <div id="games-list" class="games-list"></div>
+  </section>
+</main>
+
+<main id="game" class="view hidden">
+  <div class="game-bar">
+    <button id="btn-back" class="btn ghost" type="button">Back</button>
+    <div id="status-pill" class="pill"></div>
+    <div id="demo-pill" class="pill demo hidden" title="These players pick random moves. No AI is involved.">DEMO PLAYERS, NO AI</div>
+    <div class="grow"></div>
+    <div class="seg" role="group" aria-label="What you can see">
+      <button id="mode-full" class="seg-btn" type="button">Full view</button>
+      <button id="mode-mystery" class="seg-btn" type="button">Mystery mode</button>
+    </div>
+    <label class="check inline"><input type="checkbox" id="chk-thoughts"><span>Thoughts</span></label>
+    <button id="btn-stop" class="btn danger hidden" type="button">Stop game</button>
+  </div>
+
+  <div class="game-grid">
+    <section class="stage-wrap">
+      <div id="stage" class="stage day">
+        <div class="table"><div class="e-button"></div></div>
+        <div id="ring"></div>
+        <div id="card" class="card"></div>
+      </div>
+      <div id="notice" class="notice hidden" role="status"></div>
+    </section>
+
+    <aside class="side">
+      <div class="side-inner">
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-tab="chat" type="button">Chat</button>
+          <button class="tab" data-tab="votes" type="button">Votes</button>
+          <button class="tab" data-tab="nights" type="button">Night log</button>
+        </div>
+        <div id="tab-chat" class="tab-body"></div>
+        <div id="tab-votes" class="tab-body hidden"></div>
+        <div id="tab-nights" class="tab-body hidden"></div>
+      </div>
+    </aside>
+
+    <section class="controls">
+      <div class="ctl-buttons">
+        <button id="c-start" class="icon-btn" type="button" title="Back to start">|&lt;</button>
+        <button id="c-prev" class="icon-btn" type="button" title="Previous (Left arrow)">&lt;</button>
+        <button id="c-play" class="icon-btn play" type="button" title="Play or pause (Space)">Play</button>
+        <button id="c-next" class="icon-btn" type="button" title="Next (Right arrow)">&gt;</button>
+        <button id="c-end" class="icon-btn" type="button" title="Jump to latest">&gt;|</button>
+        <select id="c-speed" title="Playback speed">
+          <option value="0.5">0.5x</option>
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="4">4x</option>
+          <option value="16">Max</option>
+        </select>
+      </div>
+      <div class="scrub-wrap">
+        <div id="markers" class="markers"></div>
+        <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Timeline">
+      </div>
+      <div id="pos" class="pos"></div>
+    </section>
+  </div>
+</main>
+
+<script src="crewmate.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

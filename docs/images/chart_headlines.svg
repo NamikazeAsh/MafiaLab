@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="152" viewBox="0 0 760 152" role="img" aria-labelledby="t d">
+<title id="t">Headline results</title><desc id="d">Headline results. Information leaks: 0 (in 992 prompts, 30 games). Decisions rated illogical: 1.8% (7 of 390, judged on logic). Villager decisions sound: 20.6% (the weak spot: thin evidence). Doctor mistake with notes: 0 of 108 (was 16 of 108 without).</desc>
+<style>
+:root { --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7; --accent:#2a78d6; --accent2:#eb6834; --border:rgba(11,11,11,.10); }
+@media (prefers-color-scheme: dark) {
+  :root { --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --axis:#383835; --accent:#3987e5; --accent2:#d95926; --border:rgba(255,255,255,.10); }
+}
+text { font-family:system-ui, -apple-system, "Segoe UI", sans-serif; }
+.h { fill:var(--ink); font-size:16px; font-weight:600; }
+.sub { fill:var(--ink2); font-size:12.5px; }
+.lab { fill:var(--ink); font-size:13px; }
+.lab2 { fill:var(--ink2); font-size:12px; }
+.mut { fill:var(--muted); font-size:11px; }
+.val { fill:var(--ink); font-size:12.5px; font-weight:600; }
+.big { fill:var(--ink); font-size:30px; font-weight:600; }
+.grid { stroke:var(--grid); stroke-width:1; }
+.axis { stroke:var(--axis); stroke-width:1; }
+</style>
+<rect x=".5" y=".5" width="759" height="151" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+<text class="h" x="20" y="30">Headline results</text>
+<rect x="20.0" y="46" width="171.0" height="90" rx="10" fill="none" stroke="var(--grid)"/>
+<text class="lab2" x="34.0" y="68">Information leaks</text>
+<text class="big" x="34.0" y="103">0</text>
+<text class="mut" x="34.0" y="124">in 992 prompts, 30 games</text>
+<rect x="203.0" y="46" width="171.0" height="90" rx="10" fill="none" stroke="var(--grid)"/>
+<text class="lab2" x="217.0" y="68">Decisions rated illogical</text>
+<text class="big" x="217.0" y="103">1.8%</text>
+<text class="mut" x="217.0" y="124">7 of 390, judged on logic</text>
+<rect x="386.0" y="46" width="171.0" height="90" rx="10" fill="none" stroke="var(--grid)"/>
+<text class="lab2" x="400.0" y="68">Villager decisions sound</text>
+<text class="big" x="400.0" y="103">20.6%</text>
+<text class="mut" x="400.0" y="124">the weak spot: thin evidence</text>
+<rect x="569.0" y="46" width="171.0" height="90" rx="10" fill="none" stroke="var(--grid)"/>
+<text class="lab2" x="583.0" y="68">Doctor mistake with notes</text>
+<text class="big" x="583.0" y="103">0 of 108</text>
+<text class="mut" x="583.0" y="124">was 16 of 108 without</text>
+</svg>

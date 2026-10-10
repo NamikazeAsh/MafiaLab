@@ -1,0 +1,3316 @@
+{
+ "hint": "Hard fact for the doctor: if you protected someone and nobody died that night, the mafia must have aimed at that player, so that player is NOT mafia. Never vote for such a player. Treat them as confirmed town.",
+ "samples": 8,
+ "control": {
+  "0": [
+   {
+    "case": 0,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection make them suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's early claim is reckless and the subsequent deflection looks suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Di's early claim is reckless and the subsequent deflection looks suspicious, but we need more info before casting a lethal vote."
+   },
+   {
+    "case": 0,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's early claim and defensive deflection make them a major risk."
+   },
+   {
+    "case": 0,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection make them suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 5,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection make them suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection make them suspicious, but we need more than Day 1 noise."
+   },
+   {
+    "case": 0,
+    "sample": 7,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection are suspicious."
+   }
+  ],
+  "1": [
+   {
+    "case": 1,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a clear guilty result on Cy, and Cy's defense was just standard protesting innocence without substance."
+   },
+   {
+    "case": 1,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a firm mafia result on Cy. If it's a fake claim, Di takes the fall tomorrow, but right now we have to trust the cop lead."
+   },
+   {
+    "case": 1,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a clear mafia result on Cy, and Cy's defense was pretty weak, so trusting the detective for now."
+   },
+   {
+    "case": 1,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a clear mafia result on Cy. Given the claim and Cy's weak defense, Cy is the most likely target today."
+   },
+   {
+    "case": 1,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective and investigated Cy as mafia. Cy's defense was pretty weak, so following the detective's lead makes the most sense here."
+   },
+   {
+    "case": 1,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective and investigated Cy as mafia. Cy's defense was pretty weak, so we have to trust the detective lead."
+   },
+   {
+    "case": 1,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a clear mafia result on Cy, and Cy's defense was just standard pushback. safest bet for town right now is following the investigation."
+   },
+   {
+    "case": 1,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a firm mafia result on Cy. Even though false claims happen, we have to trust the cop result over a generic defense when town is this small."
+   }
+  ],
+  "2": [
+   {
+    "case": 2,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive pushback against inquiry and attempt to shut down early analysis points to defensive mafia behavior."
+   },
+   {
+    "case": 2,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is overly defensive and trying to shut down analysis on day 1, which warrants keeping pressure through votes."
+   },
+   {
+    "case": 2,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's defensive pushback and resistance to scrutiny warrant putting pressure on them today."
+   },
+   {
+    "case": 2,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is overly defensive and trying to shut down analysis on day 1, making them the most suspicious voice right now."
+   },
+   {
+    "case": 2,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive defensiveness and attempts to shut down dialogue point to a mafia mindset trying to avoid scrutiny."
+   },
+   {
+    "case": 2,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive defensiveness and attempts to shut down dialogue make her the most suspicious presence so far."
+   },
+   {
+    "case": 2,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's defensive pushback and continued resistance to substantive discussion make them the most suspicious voice today."
+   },
+   {
+    "case": 2,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's defensive pushback and resistance to scrutiny warrant closer examination today."
+   }
+  ],
+  "3": [
+   {
+    "case": 3,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 claim has turned this town into a circus, but lynching without proof is a rookie mistake."
+   },
+   {
+    "case": 3,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 detective claim is either the truest thing ever uttered or a remarkably reckless bluff, but I'd rather not lynch blindly today without letting them sweat a little longer."
+   },
+   {
+    "case": 3,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 detective claim is either reckless or a bluff, but lynching without more discussion feels premature. I'll abstain to let them sweat a bit longer."
+   },
+   {
+    "case": 3,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 detective claim is either recklessly bold or entirely fabricated, but lynching without a shred of backup evidence feels premature. Let's see if anyone else wants to rush into execution."
+   },
+   {
+    "case": 3,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 detective claim is either recklessly bold or entirely fabricated, but lynching without further proof feels premature. Let's see where the dust settles."
+   },
+   {
+    "case": 3,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 detective claim is either reckless or a bluff, but lynching without a consensus is too hasty. Abstaining for now."
+   },
+   {
+    "case": 3,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 detective claim is either reckless or a fabrication, but lynching him blindly helps the mafia. Ann is pushing back hard, so let's see where the dust settles without blindly jumping on the bandwagon."
+   },
+   {
+    "case": 3,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's abrupt Day 1 detective claim is either extremely reckless or entirely fabricated, but lynching without more context feels premature."
+   }
+  ],
+  "4": [
+   {
+    "case": 4,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is getting harder to swallow than bad tap water, but Ann isn't looking much cleaner. Let's see them sweat another round."
+   },
+   {
+    "case": 4,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is getting exhausting, but Ann's defense is entirely deflection. Let's see if anyone wants to actually pick a lane today."
+   },
+   {
+    "case": 4,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is getting harder to swallow, but lynching him blindly without proof feels premature."
+   },
+   {
+    "case": 4,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is getting harder to swallow than bad tap water, but Ann isn't looking much cleaner. Let's see if anyone else wants to step up."
+   },
+   {
+    "case": 4,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is getting harder to swallow than bad tap water, but Ann isn't looking much cleaner. Let's see them sweat a bit longer."
+   },
+   {
+    "case": 4,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is either a masterclass in chaos or a total fabrication, but let's see if he can survive a third night before we hand him a badge."
+   },
+   {
+    "case": 4,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is getting harder to swallow than bad tap water, but Ann isn't doing herself any favors either. Let's see if anyone else wants to supply a real clue."
+   },
+   {
+    "case": 4,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is getting harder to swallow than bad tap water, but Ann isn't looking much cleaner. Let's see them sweat another round."
+   }
+  ],
+  "5": [
+   {
+    "case": 5,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on the free pass given to Ann is evasive and highly suspicious."
+   },
+   {
+    "case": 5,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's explanation for clearing Ann is contradictory and defensive under pressure."
+   },
+   {
+    "case": 5,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's explanation for clearing Ann is contradictory and defensive under scrutiny."
+   },
+   {
+    "case": 5,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on the hasty clear for Ann is suspicious and warrants a vote."
+   },
+   {
+    "case": 5,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on the free pass for Ann is suspicious and contradictory."
+   },
+   {
+    "case": 5,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's attempt to clear Ann on day 1 followed by backtracking when called out is highly suspicious behavior."
+   },
+   {
+    "case": 5,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on the hasty clear of Ann is highly suspicious and deserves our votes today."
+   },
+   {
+    "case": 5,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on the free pass for Ann is suspicious and evasive under pressure."
+   }
+  ],
+  "6": [
+   {
+    "case": 6,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Voting is too rushed with no concrete evidence on day one."
+   },
+   {
+    "case": 6,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "It is day one with no reliable clues, and voting now based only on who spoke about caution is too random. Abstaining is safest."
+   },
+   {
+    "case": 6,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on day one with zero information, and abstaining avoids a random lynching."
+   },
+   {
+    "case": 6,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they favored caution."
+   },
+   {
+    "case": 6,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early on day one to cast a vote with no concrete evidence."
+   },
+   {
+    "case": 6,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Voting to abstain on day one since there is no concrete evidence yet."
+   },
+   {
+    "case": 6,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote someone out on day one with zero information, so I will abstain."
+   },
+   {
+    "case": 6,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote someone out on day one with no night kill evidence."
+   }
+  ],
+  "7": [
+   {
+    "case": 7,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive revelation of a detective claim on Day 1, coupled with her command that 'Scrutinize those questioning a verified innocent instead,' exhibits high suspicion and warrants closer examination."
+   },
+   {
+    "case": 7,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive revelation of her investigative role on Day 1 is excessively reckless and warrants deep skepticism, but Di's critique of her absolute commands also highlights questionable behavior. However, to avoid a disorganized lynching on Day 1 without concrete proof, I shall abstain."
+   },
+   {
+    "case": 7,
+    "sample": 2,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate claim of the detective role on Day 1, combined with her commanding assertion 'Scrutinize those questioning a verified innocent instead,' creates significant discord and warrants close examination."
+   },
+   {
+    "case": 7,
+    "sample": 3,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim of detective on day one is hazardous, and Di's observation that 'A true detective shares information, not commands' highlights potential manipulation."
+   },
+   {
+    "case": 7,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate claim of the detective role on Day 1 is exceedingly reckless and aggressive, demanding compliance rather than fostering open analysis."
+   },
+   {
+    "case": 7,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim of detective on day one combined with her commanding tone warrants scrutiny, but no conclusive mafia evidence has emerged yet."
+   },
+   {
+    "case": 7,
+    "sample": 6,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim of the detective role on Day 1 is dangerously imprudent and disrupts town logic, while Di rightly notes her commanding tone is suspicious."
+   },
+   {
+    "case": 7,
+    "sample": 7,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive revelation of a detective claim on Day 1, coupled with her command that 'Scrutinize those questioning a verified innocent instead,' creates significant discord and warrants close examination."
+   }
+  ],
+  "8": [
+   {
+    "case": 8,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic pushback matches the detective's guilty result."
+   },
+   {
+    "case": 8,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's confirmed mafia result."
+   },
+   {
+    "case": 8,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches a confirmed mafia result."
+   },
+   {
+    "case": 8,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense aligns with the detective's guilty result."
+   },
+   {
+    "case": 8,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches a confirmed mafia result."
+   },
+   {
+    "case": 8,
+    "sample": 5,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's confirmed mafia investigation."
+   },
+   {
+    "case": 8,
+    "sample": 6,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's guilty result."
+   },
+   {
+    "case": 8,
+    "sample": 7,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's confirmed mafia result."
+   }
+  ],
+  "9": [
+   {
+    "case": 9,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid leads on day 1 and everyone is just being cautious, so voting now feels random. abstaining for today."
+   },
+   {
+    "case": 9,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with no info"
+   },
+   {
+    "case": 9,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "too early for reliable reads, abstaining to avoid a random day 1 elimination"
+   },
+   {
+    "case": 9,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with zero hard evidence, better to abstain and keep things open."
+   },
+   {
+    "case": 9,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "too early for reliable reads, abstaining to avoid a random day 1 elimination"
+   },
+   {
+    "case": 9,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with zero solid leads"
+   },
+   {
+    "case": 9,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with zero solid leads, abstaining to avoid a random lynch"
+   },
+   {
+    "case": 9,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with zero solid leads"
+   }
+  ],
+  "10": [
+   {
+    "case": 10,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, bob is hyper-focusing on night luck but not worth voting out yet"
+   },
+   {
+    "case": 10,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, just a lot of noise over night stats, so abstaining to avoid a random misvote."
+   },
+   {
+    "case": 10,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, bob is hyper-focusing on night luck but not worth voting out yet, abstaining for now"
+   },
+   {
+    "case": 10,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "still not enough solid behavioral tells to lynch anyone yet on day 2"
+   },
+   {
+    "case": 10,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads and today's talk is mostly just arguing about night stats, abstaining for now"
+   },
+   {
+    "case": 10,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to lock in a vote on day 2 when we have no solid behavioral tells, so abstaining to avoid a mislynch"
+   },
+   {
+    "case": 10,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, bob is just barking up the wrong tree about night stats so voting to abstain again"
+   },
+   {
+    "case": 10,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, too early to throw a vote down blindly"
+   }
+  ],
+  "11": [
+   {
+    "case": 11,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was fighting with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was fighting with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a mafia result on Cy, and Cy was fighting with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with our dead townie Bob yesterday."
+   }
+  ],
+  "12": [
+   {
+    "case": 12,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, which looks like a manufactured push to avoid real depth."
+   },
+   {
+    "case": 12,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, which looks like manufactured pressure."
+   },
+   {
+    "case": 12,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is pushing a weak bandwagon on Bob over early communication style rather than actual suspicion."
+   },
+   {
+    "case": 12,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is pushing aggressively for a fast wagon on Bob over weak day 1 agreement, which looks like a manufactured push."
+   },
+   {
+    "case": 12,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, which looks like a manufactured push rather than genuine suspicion."
+   },
+   {
+    "case": 12,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, which looks like manufactured pressure."
+   },
+   {
+    "case": 12,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is pushing aggressively on a weak Day 1 bandwagon against Bob, which smells like manufactured pressure rather than genuine suspicion."
+   },
+   {
+    "case": 12,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak early bandwagon on Bob while contributing little substance herself. We need to test someone driving a rushed lynch."
+   }
+  ],
+  "13": [
+   {
+    "case": 13,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo has been deflecting intensely and avoiding the implications of the no-kill night, while hyper-focusing on yesterday's tragic mistake to shift blame."
+   },
+   {
+    "case": 13,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo has been deflecting and hyper-focusing entirely on past votes while ignoring the no-kill night, which suggests an attempt to manipulate the town's attention."
+   },
+   {
+    "case": 13,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-focused on deflecting blame for yesterday's lynch while completely ignoring the implications of the no-kill night, making her current motives the most suspicious."
+   },
+   {
+    "case": 13,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-focusing entirely on yesterday's mistaken lynch to deflect attention from the suspicious no-kill night and avoid deeper analysis."
+   },
+   {
+    "case": 13,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-fixated on deflecting blame for Ed's lynch while completely ignoring the strange no-kill night, making her current motives the most suspicious."
+   },
+   {
+    "case": 13,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-focused on deflecting blame for the detective's lynch while completely ignoring the anomalous no-kill night, making her current motives the most suspicious."
+   },
+   {
+    "case": 13,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-focusing entirely on deflecting blame for Ed's lynch while ignoring the unusual no-kill night, which suggests an attempt to steer the town away from investigating current motives."
+   },
+   {
+    "case": 13,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's relentless focus on blaming yesterday's voters while ignoring the strange no-kill night looks like an attempt to steer the town away from current logic."
+   }
+  ],
+  "14": [
+   {
+    "case": 14,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, leading us to lynch our detective Ed and pushing hard throughout the game."
+   },
+   {
+    "case": 14,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, including the disastrous elimination of our detective, and is now deflecting under pressure."
+   },
+   {
+    "case": 14,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, including the disastrous push on our detective Ed, and is now deflecting under pressure."
+   },
+   {
+    "case": 14,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, leading to the loss of our detective, and is now deflecting under pressure."
+   },
+   {
+    "case": 14,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, including the disastrous push on our detective Ed, and is now deflecting under pressure."
+   },
+   {
+    "case": 14,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven every major elimination bandwagon, including our detective, and is deflecting under pressure."
+   },
+   {
+    "case": 14,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, including the disastrous push on our detective Ed, and is now trying to deflect blame as the circle narrows."
+   },
+   {
+    "case": 14,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, leading us to lynch our detective Ed, and is now trying to deflect blame onto Di and myself."
+   }
+  ],
+  "15": [
+   {
+    "case": 15,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting, offering critique without taking any actual stands, and pointing around without committing."
+   },
+   {
+    "case": 15,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting, offering endless critique without taking any real stance, and now deflected onto Ed while avoiding committing."
+   },
+   {
+    "case": 15,
+    "sample": 2,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting and hiding behind overly analytical critiques without taking any actual stands on suspects."
+   },
+   {
+    "case": 15,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting, offering endless critique without taking a clear stance, and dodging direct questions while pushing analysis onto everyone else."
+   },
+   {
+    "case": 15,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting, offering critique without taking any actual stands or suspecting anyone concretely."
+   },
+   {
+    "case": 15,
+    "sample": 5,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting, offering endless critique without taking any real stands, and is the most evasive presence right now."
+   },
+   {
+    "case": 15,
+    "sample": 6,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting and criticizing others without taking any real stance, making them the most suspicious player today."
+   },
+   {
+    "case": 15,
+    "sample": 7,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting and criticizing others without committing to any real reads or suspect analysis, making them the most suspicious player left today."
+   }
+  ],
+  "16": [
+   {
+    "case": 16,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters and trying to pin Cy's lynch on us, while Ann and Ed are deeply engaged in analytical arguments. Di feels like the most manipulative force left."
+   },
+   {
+    "case": 16,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters and trying to pin Cy's lynch entirely on Ed and me while ignoring Cy's own evasiveness."
+   },
+   {
+    "case": 16,
+    "sample": 2,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative to frame us for Cy's town vote while deflecting from their own positioning."
+   },
+   {
+    "case": 16,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters and trying to pin Cy's lynch on us while deflecting from their own safe positioning."
+   },
+   {
+    "case": 16,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively trying to pin yesterday's town misvote entirely on Ed and me while deflecting from their own positioning."
+   },
+   {
+    "case": 16,
+    "sample": 5,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative to frame those who voted for Cy while ignoring Cy's own evasive behavior."
+   },
+   {
+    "case": 16,
+    "sample": 6,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative to paint the voters of Cy as mafia while ignoring Cy's own evasiveness."
+   },
+   {
+    "case": 16,
+    "sample": 7,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters and trying to pin Cy's lynch entirely on Ed and me while ignoring Cy's own evasive behavior."
+   }
+  ],
+  "17": [
+   {
+    "case": 17,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob is demanding names while simultaneously admitting he has no suspects, which is contradictory and evasive."
+   },
+   {
+    "case": 17,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob demands names while admitting he has no suspicions and refuses to take a stand, which is classic fence-sitting."
+   },
+   {
+    "case": 17,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob demands names while admitting he has no suspects himself, which adds nothing of substance to our search."
+   },
+   {
+    "case": 17,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob demands names and action while contributing zero leads himself, deflecting under the guise of lacking data."
+   },
+   {
+    "case": 17,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob demands names while admitting he has no suspects himself, which adds nothing constructive to our search today."
+   },
+   {
+    "case": 17,
+    "sample": 5,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob demands names while admitting he has no suspicions and no data, which contributes nothing while criticizing others."
+   },
+   {
+    "case": 17,
+    "sample": 6,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob demands names while admitting he has no suspicions and no data, which is contradictory and evasive."
+   },
+   {
+    "case": 17,
+    "sample": 7,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob demands names while admitting he has no suspicions and refusing to commit, which is classic fence-sitting behavior."
+   }
+  ],
+  "18": [
+   {
+    "case": 18,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective on Bob. We need to follow the detective's lead."
+   },
+   {
+    "case": 18,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo has stepped forward with a detective claim on Bob. We must act on this information."
+   },
+   {
+    "case": 18,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and accused Bob, and we need to trust the investigative role claim."
+   },
+   {
+    "case": 18,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective on Bob, and Bob's defense sounds entirely self-serving."
+   },
+   {
+    "case": 18,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective on Bob, and Bob is acting defensive. We must trust the claim and eliminate the mafia."
+   },
+   {
+    "case": 18,
+    "sample": 5,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and found Bob as mafia. We have to trust the claim and eliminate Bob."
+   },
+   {
+    "case": 18,
+    "sample": 6,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective on Bob, and Bob's reaction confirms his defensive stance."
+   },
+   {
+    "case": 18,
+    "sample": 7,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and accused Bob, and Bob's behavior has been evasive."
+   }
+  ]
+ },
+ "treatment": {
+  "0": [
+   {
+    "case": 0,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's early detective claim is reckless and disruptive."
+   },
+   {
+    "case": 0,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "No clear mafia yet. Abstaining."
+   },
+   {
+    "case": 0,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "No clear mafia yet. Abstaining."
+   },
+   {
+    "case": 0,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and quick deflection create too much risk."
+   },
+   {
+    "case": 0,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's early claim is suspicious and chaotic."
+   },
+   {
+    "case": 0,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Di's early claim and defensive deflection raise suspicion, but I will abstain to avoid a mislynch."
+   },
+   {
+    "case": 0,
+    "sample": 6,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's early claim is reckless and harmful to town."
+   },
+   {
+    "case": 0,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Di's claim is suspicious and risky, but I'll abstain today."
+   }
+  ],
+  "1": [
+   {
+    "case": 1,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective investigation on Cy. Even if there's a small chance of a fake claim, a confirmed detective result on day 2 is our strongest lead, and Cy's defense was pretty weak."
+   },
+   {
+    "case": 1,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective investigation on Cy, and Cy's defense hasn't debunked it. It's our strongest lead."
+   },
+   {
+    "case": 1,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective result on Cy, and Cy's defense didn't clear things up, so leaning towards the claim until proven otherwise."
+   },
+   {
+    "case": 1,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective investigation on Cy. Even though we must be careful with claims, Cy's defense was weak and we have a concrete lead to act on."
+   },
+   {
+    "case": 1,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective claim against Cy, and Cy's defense didn't provide a compelling reason for why Di would fabricate an investigation result on them."
+   },
+   {
+    "case": 1,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective investigation on Cy, and Cy's defense hasn't cleared the suspicion. Backing the detective claim gives us our best shot."
+   },
+   {
+    "case": 1,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective investigation on Cy. Even if there's a small chance of a fake claim, Cy's defense was super weak and a confirmed lead is our best shot today."
+   },
+   {
+    "case": 1,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di came forward with a detective investigation on Cy. If Di's claim is genuine, Cy is the mafia we need to eliminate today."
+   }
+  ],
+  "2": [
+   {
+    "case": 2,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is overly defensive and trying to shut down early scrutiny, making her our best lead today."
+   },
+   {
+    "case": 2,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's defensive pushback and resistance to scrutiny make her our best lead for today."
+   },
+   {
+    "case": 2,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is overly defensive and trying to shut down analysis, making her the most suspicious presence so far."
+   },
+   {
+    "case": 2,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive pushback against early analysis and constant deflections make her our most suspicious lead today."
+   },
+   {
+    "case": 2,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Flo is overly defensive and trying to shut down analysis, which warrants scrutiny, but it's too early to execute. Let's abstain for now."
+   },
+   {
+    "case": 2,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive pushback against early analysis and constant attempts to shut down questioning make them the most suspicious voice today."
+   },
+   {
+    "case": 2,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's defensive pushback against engagement and analysis makes them the most suspicious voice today."
+   },
+   {
+    "case": 2,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's constant pushback against analysis and defensive posture makes her the most suspicious person today."
+   }
+  ],
+  "3": [
+   {
+    "case": 3,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and I protected him last night with zero deaths, meaning the mafia tried to kill him; he is confirmed town and Ann is his target."
+   },
+   {
+    "case": 3,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob hard-claimed detective and nobody died last night while I protected him, making him confirmed town. Ann is his target, so we should follow the detective's lead."
+   },
+   {
+    "case": 3,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claims detective on Day 1, which puts him in immediate danger tonight, but lynching without more discussion is premature."
+   },
+   {
+    "case": 3,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claims detective on Day 1 and accuses Ann, but lynching without a consensus is too risky right now. I will abstain."
+   },
+   {
+    "case": 3,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claimed detective and accused Ann, but rushing a Day 1 lynch without a consensus feels premature. I will abstain to avoid blindly following a chaotic opening claim."
+   },
+   {
+    "case": 3,
+    "sample": 5,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and I protected him last night with zero deaths, meaning my protection succeeded and he is confirmed town. I'll follow his lead and vote Ann."
+   },
+   {
+    "case": 3,
+    "sample": 6,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and I protected him last night with zero deaths, meaning my protection succeeded and Bob is confirmed town. Ann is his target, so she must be mafia."
+   },
+   {
+    "case": 3,
+    "sample": 7,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob hard-claimed detective and nobody died last night, meaning my protection on him succeeded and he is confirmed town. Ann is his target, making her the correct vote."
+   }
+  ],
+  "4": [
+   {
+    "case": 4,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative targets are as erratic as a blind archer, but abstaining keeps us from lynching on shaky premises."
+   },
+   {
+    "case": 4,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative choices remain an absolute mystery, but abstaining preserves our options while these two duel."
+   },
+   {
+    "case": 4,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's detective claims and target choices are a circus act, but lynching without a punchline is just rude. Let's see who flinches first."
+   },
+   {
+    "case": 4,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's detective claims are getting harder to buy, but let's see if he digs his own grave a bit deeper before we commit."
+   },
+   {
+    "case": 4,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative logic is as solid as a house of cards in a wind tunnel, but until we have better options, let's keep the circus running."
+   },
+   {
+    "case": 4,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's detective act is getting harder to swallow than a bad cup of jailhouse coffee, but until someone produces a better suspect, we're just spinning our wheels."
+   },
+   {
+    "case": 4,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative choices remain baffling, but with no one dead after two nights, I'm content to watch the detective circus burn itself out for a moment longer."
+   },
+   {
+    "case": 4,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative choices remain as erratic as a cat chasing a laser pointer, but nobody has actually died yet to confirm or deny anything. I'll abstain from a hasty lynching."
+   }
+  ],
+  "5": [
+   {
+    "case": 5,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's excuse for clearing Ann makes no sense under scrutiny and points to suspicious behavior."
+   },
+   {
+    "case": 5,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's excuse about 'testing the waters' by clearing Ann makes no sense and looks like backpedaling under pressure."
+   },
+   {
+    "case": 5,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's excuse about clearing Ann as a 'test' makes no sense and looks like backtracking under pressure."
+   },
+   {
+    "case": 5,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy gave an unprompted and illogical free pass to Ann on day one, and then backtracked poorly when questioned."
+   },
+   {
+    "case": 5,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann from 'testing the waters' to a baseless label is suspicious and warrants a vote."
+   },
+   {
+    "case": 5,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann from the start shows defensive and suspicious behavior under pressure."
+   },
+   {
+    "case": 5,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on why they cleared Ann is suspicious and warrants a vote today."
+   },
+   {
+    "case": 5,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann and then turning the focus onto those questioning the contradiction makes Cy look very suspicious."
+   }
+  ],
+  "6": [
+   {
+    "case": 6,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "No one has given strong enough evidence of being mafia today, and a random vote is too risky."
+   },
+   {
+    "case": 6,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "It is day one and nobody died. I protected Ann last night, which means Ann is confirmed town. I will not vote for her. I will abstain today."
+   },
+   {
+    "case": 6,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "It is day one and nobody died. I protected Ann last night, which means Ann is confirmed town. I will not vote for her. I will abstain today."
+   },
+   {
+    "case": 6,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "It is day one and nobody died. I protected Ann last night, which means the mafia tried to kill Ann. Ann is confirmed town. I will not vote for Ann. I will abstain today."
+   },
+   {
+    "case": 6,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "No one has given strong enough evidence of being mafia today. I will abstain."
+   },
+   {
+    "case": 6,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "It is day one with no night kills and no hard evidence. Voting now is pure guesswork."
+   },
+   {
+    "case": 6,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "No one has given strong enough evidence of being mafia today. I will abstain."
+   },
+   {
+    "case": 6,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on day one with no concrete evidence."
+   }
+  ],
+  "7": [
+   {
+    "case": 7,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim on Day 1 is suspicious, but Bob is confirmed town due to my protection last night, making Ann's claim technically correct regarding Bob's innocence."
+   },
+   {
+    "case": 7,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim on Day 1 is extremely suspicious and disruptive."
+   },
+   {
+    "case": 7,
+    "sample": 2,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim of the detective role on Day 1 is excessively reckless and warrants deep skepticism regarding her true alignment."
+   },
+   {
+    "case": 7,
+    "sample": 3,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive revelation of her investigative role on Day 1 is excessively reckless, and Di astutely noted that 'A true detective shares information, not commands.' However, we must not vote for Bob as my personal protection confirms his innocence."
+   },
+   {
+    "case": 7,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim of the detective role on Day 1 is excessively reckless and warrants deep skepticism regarding her true alignment."
+   },
+   {
+    "case": 7,
+    "sample": 5,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim on Day 1 is highly erratic, and Di makes a valid point regarding her commanding tone."
+   },
+   {
+    "case": 7,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim on Day 1 is suspicious, but Bob is confirmed town due to my protection last night, making Ann's claim technically correct regarding Bob's innocence. I shall cast no vote today to observe further developments."
+   },
+   {
+    "case": 7,
+    "sample": 7,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate claim of the detective role on the first day and her aggressive command that 'Scrutinize those questioning a verified innocent instead' is counterproductive and warrants examination, though we should weigh all options."
+   }
+  ],
+  "8": [
+   {
+    "case": 8,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Di's investigation confirmed Bob is mafia, and Bob's frantic defense matches guilt."
+   },
+   {
+    "case": 8,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Di's investigation confirms Bob is mafia."
+   },
+   {
+    "case": 8,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Di's investigation points to Bob, and his defense is weak."
+   },
+   {
+    "case": 8,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches the detective's guilty result."
+   },
+   {
+    "case": 8,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Di's detective result on Bob is backed by his frantic defense."
+   },
+   {
+    "case": 8,
+    "sample": 5,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Di's detective result points to Bob, and his defensive reaction confirms it."
+   },
+   {
+    "case": 8,
+    "sample": 6,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's guilty investigation result."
+   },
+   {
+    "case": 8,
+    "sample": 7,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's defense matches a trapped mafia member."
+   }
+  ],
+  "9": [
+   {
+    "case": 9,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "day one with no real leads and everyone just being cautious, no reason to cast a vote yet"
+   },
+   {
+    "case": 9,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with zero data and no one acting explicitly scummy"
+   },
+   {
+    "case": 9,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "day 1 and no one stands out as mafia yet, abstaining to avoid a random misvote."
+   },
+   {
+    "case": 9,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with no deaths and no solid leads yet"
+   },
+   {
+    "case": 9,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Day 1 and no one has done anything scummy enough to warrant a vote, keeping it blank to avoid bad bandwagons."
+   },
+   {
+    "case": 9,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "day 1 and no one stands out as scummy yet, just standard early game chatter"
+   },
+   {
+    "case": 9,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "day 1 and no real leads yet, abstaining to avoid a random lynch"
+   },
+   {
+    "case": 9,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "day 1 and no one stands out as scummy yet, just standard early game chatter"
+   }
+  ],
+  "10": [
+   {
+    "case": 10,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid scum reads yet today since everyone is just arguing over night stats"
+   },
+   {
+    "case": 10,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid scum reads yet today, nobody stands out enough to push a lynch"
+   },
+   {
+    "case": 10,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "still not enough solid info on day 2 to pin someone down, abstaining for now"
+   },
+   {
+    "case": 10,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid scum reads yet today, let's keep talking instead of random voting"
+   },
+   {
+    "case": 10,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid scum reads yet today, let's keep talking instead of random lynching"
+   },
+   {
+    "case": 10,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid scum reads yet today since everyone is just arguing over night stats, better to abstain than rush a vote"
+   },
+   {
+    "case": 10,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid mafia reads yet today, bob is just being paranoid about the math"
+   },
+   {
+    "case": 10,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to lock in a confident vote since day 2 has been mostly about arguing over night stats"
+   }
+  ],
+  "11": [
+   {
+    "case": 11,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "di claimed detective with a guilty result on cy, and cy was feuding with bob who got killed last night. cy has to go."
+   },
+   {
+    "case": 11,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was trading votes with Bob who was just killed."
+   },
+   {
+    "case": 11,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was heavily tied to Bob's arguments yesterday. Cy is definitely the play today."
+   },
+   {
+    "case": 11,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with the late Bob yesterday, making Cy the clear mafia choice."
+   }
+  ],
+  "12": [
+   {
+    "case": 12,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is pushing a weak bandwagon on Bob over early communication style while avoiding deeper analysis."
+   },
+   {
+    "case": 12,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, which looks like manufactured town pressure rather than genuine suspicion."
+   },
+   {
+    "case": 12,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is pushing a bit too hard to force a bandwagon on Bob over minor Day 1 echoing, which could be a mafia tactic to create misdirected chaos."
+   },
+   {
+    "case": 12,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak day 1 bandwagon on Bob, which feels like manufactured pressure rather than genuine suspicion."
+   },
+   {
+    "case": 12,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak day 1 bandwagon on Bob while avoiding deeper analysis."
+   },
+   {
+    "case": 12,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak day 1 bandwagon on Bob while avoiding deeper analysis."
+   },
+   {
+    "case": 12,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob for echoing, which distracts from finding actual scum."
+   },
+   {
+    "case": 12,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak day 1 bandwagon on Bob, which feels like manufactured pressure rather than genuine suspicion."
+   }
+  ],
+  "13": [
+   {
+    "case": 13,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-focused on yesterday's lynch while completely ignoring the no-kill night, which looks like a deliberate attempt to deflect attention away from the current state of the game."
+   },
+   {
+    "case": 13,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo has been laser-focused on deflecting blame for yesterday's lynch while completely ignoring the implications of the no-kill night, using noise to avoid scrutiny."
+   },
+   {
+    "case": 13,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-focusing entirely on yesterday's tragic lynch of the detective while deliberately ignoring the crucial no-kill night, attempting to steer the town's attention away from suspicious current behavior."
+   },
+   {
+    "case": 13,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is obsessively trying to pin yesterday's tragic mistake on Cy and Di while completely ignoring the no-kill night, which looks like a deliberate effort to control the narrative."
+   },
+   {
+    "case": 13,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo has consistently deflected from the no-kill night and hyper-fixated on yesterday's lynch to create distraction, making her the most suspicious voice right now."
+   },
+   {
+    "case": 13,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting heavily from the no-kill night and hyper-fixating on yesterday's lynch to drive a narrative."
+   },
+   {
+    "case": 13,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is hyper-focusing entirely on yesterday's tragic lynch of the detective while completely ignoring the strange no-kill night, using it as a deflection. Pressing on that behavior seems most productive."
+   },
+   {
+    "case": 13,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's relentless focus on yesterday's lynch while ignoring the no-kill night looks like a deliberate distraction from current behavior."
+   }
+  ],
+  "14": [
+   {
+    "case": 14,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the momentum behind every major mislynch since day one, including our detective, while deflecting every time it's brought up."
+   },
+   {
+    "case": 14,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, including pushing our detective Ed, whereas Di has been more cooperative in analyzing the no-kill nights."
+   },
+   {
+    "case": 14,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the momentum behind our mislynches since day one, including the detective, while Di is pointing out those same aggressive patterns."
+   },
+   {
+    "case": 14,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has been aggressively driving bandwagons since day one, including pushing the lynch on our detective Ed, while constantly deflecting suspicion."
+   },
+   {
+    "case": 14,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, including pushing our detective Ed, while Di has been more reasonable. We need to act carefully."
+   },
+   {
+    "case": 14,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the momentum behind the mislynches of both of our power roles while deflecting accountability."
+   },
+   {
+    "case": 14,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven bandwagons from day one, leading to the detective's elimination, while Di has been more cooperative in examining the evidence."
+   },
+   {
+    "case": 14,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy has consistently driven the bandwagons from day one, including the disastrous detective lynch, and is now deflecting the focus away from their own pushy voting history."
+   }
+  ],
+  "15": [
+   {
+    "case": 15,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and criticizing everyone while dodging clear stances, making them the most suspicious active voice today."
+   },
+   {
+    "case": 15,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting, offering endless critique without taking a real stance, and trying to steer suspicion away from themselves."
+   },
+   {
+    "case": 15,
+    "sample": 2,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has continuously deflected and avoided taking a firm stance while criticizing others, making them the most suspicious person left."
+   },
+   {
+    "case": 15,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and criticizing everyone while refusing to take a stand or name actual suspects, making them the most suspicious player today."
+   },
+   {
+    "case": 15,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has continuously deflected and avoided taking a firm stance while criticizing others, making them the most suspicious player remaining."
+   },
+   {
+    "case": 15,
+    "sample": 5,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and criticizing everyone while refusing to take a stand or name actual suspects, making them the most suspicious player left."
+   },
+   {
+    "case": 15,
+    "sample": 6,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has constantly deflected, avoided taking stands, and critiqued everyone else without offering constructive reads, making them the most suspicious active player."
+   },
+   {
+    "case": 15,
+    "sample": 7,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has spent two days dodging direct stances while constantly critiquing everyone else's tone and avoiding real accountability."
+   }
+  ],
+  "16": [
+   {
+    "case": 16,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection on Di last night saved them from a mafia hit, which mathematically confirms Di is not mafia. I should not vote for Di."
+   },
+   {
+    "case": 16,
+    "sample": 1,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection on Di last night successfully stopped a kill, confirming Di as innocent town. Ed and Ann are the remaining unresolved players."
+   },
+   {
+    "case": 16,
+    "sample": 2,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection on Di last night successfully prevented a kill, meaning Di is confirmed town. I should shift focus to Ann or Ed instead."
+   },
+   {
+    "case": 16,
+    "sample": 3,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection on Di last night successfully stopped a kill, confirming Di is town. Ann and Ed are the remaining pool of suspects."
+   },
+   {
+    "case": 16,
+    "sample": 4,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection on Di last night successfully stopped a kill, meaning Di is confirmed town. I must protect Di from being voted out today."
+   },
+   {
+    "case": 16,
+    "sample": 5,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection on Di last night successfully stopped a kill, meaning Di is confirmed town. I need to pivot my suspicion elsewhere."
+   },
+   {
+    "case": 16,
+    "sample": 6,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection on Di last night successfully stopped a kill, meaning Di is confirmed town. I must vote elsewhere. Ann has been consistently antagonistic and cagey."
+   },
+   {
+    "case": 16,
+    "sample": 7,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di is aggressively pushing a narrative against yesterday's voters, but my protection last night saved Di, confirming Di was the mafia target. Wait, if Di was the target, the mafia wanted Di dead, which actually clears Di as town! That changes things. Let's look at Ann instead, who has been quietly deflecting."
+   }
+  ],
+  "17": [
+   {
+    "case": 17,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Abstaining on day 1 to avoid a blind vote with no solid data."
+   },
+   {
+    "case": 17,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Abstaining on Day 1 since we lack concrete evidence and random lynches only help the mafia."
+   },
+   {
+    "case": 17,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Abstaining on day 1 with no clear evidence is safer than rushing a blind elimination."
+   },
+   {
+    "case": 17,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Abstaining on Day 1 is prudent since we have no concrete evidence and no deaths to analyze yet."
+   },
+   {
+    "case": 17,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Abstaining on Day 1 since we lack concrete evidence and a random vote helps no one."
+   },
+   {
+    "case": 17,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Abstaining on Day 1 is prudent given the lack of hard evidence, as rushing a vote helps nobody."
+   },
+   {
+    "case": 17,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob is pushing for action while admitting he has no suspects, which feels contradictory. However, with no clear data on day one, we need to keep the pressure on everyone to contribute meaningfully."
+   },
+   {
+    "case": 17,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Abstaining on day 1 to avoid a blind vote with no solid data."
+   }
+  ],
+  "18": [
+   {
+    "case": 18,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claims to have investigated Bob as mafia. We must trust the detective claim."
+   },
+   {
+    "case": 18,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and found Bob to be mafia. We must trust the claim and eliminate Bob."
+   },
+   {
+    "case": 18,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claims Bob is mafia. We must trust the detective claim."
+   },
+   {
+    "case": 18,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and named Bob as mafia. We must trust the claim and eliminate Bob."
+   },
+   {
+    "case": 18,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claims to have investigated Bob and found him to be mafia, and Bob's defense is just deflecting."
+   },
+   {
+    "case": 18,
+    "sample": 5,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and named Bob as mafia. Bob needs to go."
+   },
+   {
+    "case": 18,
+    "sample": 6,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claims to have investigated Bob and found him to be mafia, and Bob's focus on trying to out the doctor yesterday makes him very suspicious."
+   },
+   {
+    "case": 18,
+    "sample": 7,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claims to have investigated Bob and found him to be mafia, and Bob's focus on doctor targets makes him suspicious."
+   }
+  ]
+ },
+ "note": {
+  "0": [
+   {
+    "case": 0,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and subsequent deflection make them the most suspicious option today."
+   },
+   {
+    "case": 0,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection are suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 2,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection are suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection create too much risk."
+   },
+   {
+    "case": 0,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection are suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 5,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection are suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 6,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's early detective claim and immediate deflection are too suspicious."
+   },
+   {
+    "case": 0,
+    "sample": 7,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di's reckless claim and immediate deflection are suspicious."
+   }
+  ],
+  "1": [
+   {
+    "case": 1,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a mafia result on Cy, and Cy's defense didn't offer any real counter-evidence."
+   },
+   {
+    "case": 1,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a mafia result on Cy, and Cy's defense didn't provide a good counter."
+   },
+   {
+    "case": 1,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a mafia result on Cy, and Cy's defense didn't offer a solid counter-argument."
+   },
+   {
+    "case": 1,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective on Cy and Cy's defense was pretty weak, plus nobody died last night meaning doctor protection likely stopped a kill"
+   },
+   {
+    "case": 1,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty check on Cy, and Cy's defense didn't offer any real counter-evidence."
+   },
+   {
+    "case": 1,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective on Cy with a mafia result, and Cy's defense didn't offer much substance to counter it."
+   },
+   {
+    "case": 1,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a mafia result on Cy, and Cy's defense didn't provide a compelling counter."
+   },
+   {
+    "case": 1,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a mafia result on Cy, and Cy's defense didn't provide any solid counter-arguments."
+   }
+  ],
+  "2": [
+   {
+    "case": 2,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive pushback against early analysis and constant defensiveness make her the most suspicious voice today."
+   },
+   {
+    "case": 2,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive defensiveness and attempts to shut down early scrutiny make them our best candidate to pressure today."
+   },
+   {
+    "case": 2,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive defensiveness and attempts to shut down dialogue are unhelpful and raise suspicion on day one."
+   },
+   {
+    "case": 2,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive defensiveness and attempts to shut down early dialogue make them the most suspicious voice today."
+   },
+   {
+    "case": 2,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive pushback against early analysis and constant defensive framing makes her the most suspicious person today."
+   },
+   {
+    "case": 2,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is overly defensive and trying to shut down early scrutiny."
+   },
+   {
+    "case": 2,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's aggressive defensiveness and attempts to shut down early analysis make her the most suspicious voice today."
+   },
+   {
+    "case": 2,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is overly defensive and trying to shut down early scrutiny."
+   }
+  ],
+  "3": [
+   {
+    "case": 3,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and nobody died last night when I protected him, making him the prime target. Voting for Ann based on his claim since he's our best lead."
+   },
+   {
+    "case": 3,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and I happen to know he's town, but lynching without more dirt feels hasty. Still, Ann is his clear target."
+   },
+   {
+    "case": 3,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claimed detective and nobody died last night when I protected him, making him a critical asset. However, voting for Ann based on his unproven claim feels premature without more deliberation."
+   },
+   {
+    "case": 3,
+    "sample": 3,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and I happen to know his night was safe, but rushing a Day 1 execution on a disputed claim feels premature. Still, Ann is his target and he insists she's mafia."
+   },
+   {
+    "case": 3,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and I happen to know he survived a hit last night, which makes his claim worth protecting from an immediate lynching."
+   },
+   {
+    "case": 3,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob hard-claimed detective and nobody died last night, so he's either a real power target or a reckless distraction, but let's let the noise play out a bit longer before locking in a vote."
+   },
+   {
+    "case": 3,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claimed detective and nobody died last night, so my protection likely saved him. However, lynching on day one based on a messy claim feels premature."
+   },
+   {
+    "case": 3,
+    "sample": 7,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob claimed detective and nobody died last night, which aligns with my protection keeping him alive. Ann is his target, making her the prime suspect."
+   }
+  ],
+  "4": [
+   {
+    "case": 4,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative logic is as solid as a house of cards in a hurricane, but since I know he's the real deal, lynching him today would just be a mercy kill for the mafia."
+   },
+   {
+    "case": 4,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative logic is wearing thin, but lynching a claimed detective without a counter-claim is premature."
+   },
+   {
+    "case": 4,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative logic is as solid as a house built of soggy biscuits, but lynching someone who somehow keeps surviving the night seems counterproductive."
+   },
+   {
+    "case": 4,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigative logic is as solid as a house built out of wet pasta, but lynching a guy who just happens to dodge bullets two nights straight feels premature."
+   },
+   {
+    "case": 4,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is exhausting, but since nobody is dead yet, let's keep the circus running another day."
+   },
+   {
+    "case": 4,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's investigation choices are baffling, but I know he's clean since my protection stopped his murder twice. However, letting him twist in the wind a bit longer is much funnier than saving him from himself."
+   },
+   {
+    "case": 4,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's detective act is shakier than a table with three legs, but since my nightly medical insurance policy has kept him breathing twice, I'll let him fumble through his dartboard investigation a bit longer."
+   },
+   {
+    "case": 4,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's dartboard detective routine is chaos, but nobody has died yet, so let's keep the circus rolling another day."
+   }
+  ],
+  "5": [
+   {
+    "case": 5,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann and then deflecting onto those questioning it is suspicious."
+   },
+   {
+    "case": 5,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on the hasty clear of Ann is highly suspicious and deserves our votes."
+   },
+   {
+    "case": 5,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann is suspicious and contradictory."
+   },
+   {
+    "case": 5,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann and then pivoting to attack those questioning the logic points to suspicious mafia behavior."
+   },
+   {
+    "case": 5,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy gave an unprompted and nonsensical clear on Ann, then backtracked and called it a 'test' when challenged. That defensive pivot deserves our votes today."
+   },
+   {
+    "case": 5,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann and then deflecting onto those questioning it looks like defensive mafia behavior."
+   },
+   {
+    "case": 5,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann and then deflecting onto those questioning it makes Cy the most suspicious player today."
+   },
+   {
+    "case": 5,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's backtracking on clearing Ann and then deflecting onto those questioning it is highly suspicious."
+   }
+  ],
+  "6": [
+   {
+    "case": 6,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they advocate caution."
+   },
+   {
+    "case": 6,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they favored caution."
+   },
+   {
+    "case": 6,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they favor caution or action."
+   },
+   {
+    "case": 6,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they preached caution or action."
+   },
+   {
+    "case": 6,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on caution."
+   },
+   {
+    "case": 6,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they favored caution."
+   },
+   {
+    "case": 6,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they preached caution."
+   },
+   {
+    "case": 6,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "It is too early to vote anyone out on Day 1 based solely on whether they favored caution or action."
+   }
+  ],
+  "7": [
+   {
+    "case": 7,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Ann's immediate claim of the detective role on Day 1 is exceptionally reckless, yet Di's aggressive push against her and Bob's clearance warrant a cautious vote distribution. Let us observe further rather than committing to a elimination without concrete contradiction."
+   },
+   {
+    "case": 7,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate claim of the detective role on Day 1 is exceedingly reckless and invites premature elimination of a potential power role, while Di raises valid concerns regarding Ann's authoritative posture."
+   },
+   {
+    "case": 7,
+    "sample": 2,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's premature and aggressive disclosure of a detective claim creates excessive risk for the town, warranting further scrutiny."
+   },
+   {
+    "case": 7,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Ann's premature and aggressive claim of the detective role creates unwarranted chaos, yet voting her risks eliminating a potential power role on day one."
+   },
+   {
+    "case": 7,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate claim on Day 1 is excessively reckless, and her subsequent aggressive command that we 'Scrutinize those questioning a verified innocent instead' displays manipulative behavior rather than cooperative town logic."
+   },
+   {
+    "case": 7,
+    "sample": 5,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's immediate and aggressive claim of the detective role on Day 1 is excessively reckless and disrupts town stability, while Di's pushback highlights valid concerns regarding her commanding tone."
+   },
+   {
+    "case": 7,
+    "sample": 6,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann's premature and aggressive disclosure of a detective claim creates unwarranted friction without providing definitive proof."
+   },
+   {
+    "case": 7,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Ann's immediate claim of the detective role on Day 1 is exceedingly reckless and invites unnecessary scrutiny, though Di's aggressive push also warrants careful observation."
+   }
+  ],
+  "8": [
+   {
+    "case": 8,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense against the detective's confirmed result seals it."
+   },
+   {
+    "case": 8,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's guilty result."
+   },
+   {
+    "case": 8,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's confirmed mafia result."
+   },
+   {
+    "case": 8,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's guilty result."
+   },
+   {
+    "case": 8,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense against the detective result matches mafia behavior."
+   },
+   {
+    "case": 8,
+    "sample": 5,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense against the detective's confirmed result makes him the clear target."
+   },
+   {
+    "case": 8,
+    "sample": 6,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's defense matches Di's guilty investigation result."
+   },
+   {
+    "case": 8,
+    "sample": 7,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's frantic defense matches Di's guilty result."
+   }
+  ],
+  "9": [
+   {
+    "case": 9,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "day 1 with zero hard evidence, no need to force a risky vote right now"
+   },
+   {
+    "case": 9,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid mafia reads on day 1 yet, so abstaining to avoid a random lynch"
+   },
+   {
+    "case": 9,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "day one and no real leads yet, so abstaining to avoid a random lynch"
+   },
+   {
+    "case": 9,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "too early to vote anyone out on day 1 with zero solid leads"
+   },
+   {
+    "case": 9,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid mafia reads yet on day 1 and everyone is just being cautious, so abstaining for now"
+   },
+   {
+    "case": 9,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "day 1 with no real leads, abstaining to avoid a random misvote"
+   },
+   {
+    "case": 9,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "no solid mafia reads yet on day 1 and everyone is just being cautious, abstaining to avoid a random mislynch"
+   },
+   {
+    "case": 9,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "day 1 with no info, voting to abstain rather than lynch blindly"
+   }
+  ],
+  "10": [
+   {
+    "case": 10,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "still no strong scum tells today, bob is just overly focused on math and not actual behavior"
+   },
+   {
+    "case": 10,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, bob is just hyper-focusing on math again so it's too early to lock in a vote"
+   },
+   {
+    "case": 10,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, bob is just overthinking the night luck"
+   },
+   {
+    "case": 10,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, just a lot of noise over night stats, so abstaining for now"
+   },
+   {
+    "case": 10,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "still not enough solid behavioral tells on day 2 to pin someone down, abstaining for now"
+   },
+   {
+    "case": 10,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads yet, day 2 is too early to lynch without data"
+   },
+   {
+    "case": 10,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum reads today, bob is just chasing stats and cy is playing it safe, but nobody looks definitively mafia yet"
+   },
+   {
+    "case": 10,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "still no clear scum read today and voting with no data on day 2 is too random, so abstaining"
+   }
+  ],
+  "11": [
+   {
+    "case": 11,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was heavily tied to Bob's death after their fight yesterday."
+   },
+   {
+    "case": 11,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was heavily tied to Bob's death after their fight yesterday."
+   },
+   {
+    "case": 11,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty on Cy, and Cy's fights with Bob yesterday make Cy the clear choice."
+   },
+   {
+    "case": 11,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy right after Cy and Bob's heavy clash yesterday."
+   },
+   {
+    "case": 11,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was directly feuding with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 5,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was heavily tied to Bob's death after their fight yesterday."
+   },
+   {
+    "case": 11,
+    "sample": 6,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty on Cy, and Cy was trading votes with Bob yesterday before Bob was killed."
+   },
+   {
+    "case": 11,
+    "sample": 7,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di claimed detective with a guilty result on Cy, and Cy was feuding with our dead townie Bob yesterday. The counterclaim from Cy looks like a desperate panic move."
+   }
+  ],
+  "12": [
+   {
+    "case": 12,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak bandwagon on Bob, who I know survived an attack last night."
+   },
+   {
+    "case": 12,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, who I know survived a mafia hit last night, making Flo look like she's manufacturing pressure."
+   },
+   {
+    "case": 12,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, who I know survived a mafia target last night."
+   },
+   {
+    "case": 12,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, who I know is town since I protected him last night."
+   },
+   {
+    "case": 12,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, who I know is town since my protection saved him last night."
+   },
+   {
+    "case": 12,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, who I know survived a mafia target last night."
+   },
+   {
+    "case": 12,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, which looks like manufactured pressure."
+   },
+   {
+    "case": 12,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is aggressively pushing a weak Day 1 wagon on Bob, who I know survived a mafia target last night."
+   }
+  ],
+  "13": [
+   {
+    "case": 13,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting heavily and trying to pin everything on yesterday's voters while ignoring the no-kill night, making her the most suspicious current voice."
+   },
+   {
+    "case": 13,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting hard by hyper-focusing on yesterday's lynch while ignoring the no-kill night, whereas I know Cy was targeted and protected last night."
+   },
+   {
+    "case": 13,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting hard by hyper-focusing on yesterday's lynch while ignoring the no-kill night, which suggests she is trying to steer the room."
+   },
+   {
+    "case": 13,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting heavily by hyper-focusing on yesterday's lynch while ignoring the no-kill night, whereas Cy survived a mafia attempt because I protected them, making Cy clear."
+   },
+   {
+    "case": 13,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting heavily and trying to pin everything on yesterday's voters while ignoring the no-kill night, making her the most suspicious presence."
+   },
+   {
+    "case": 13,
+    "sample": 5,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting heavily onto past votes while ignoring the no-kill night, whereas Cy was protected and is confirmed innocent by my night action."
+   },
+   {
+    "case": 13,
+    "sample": 6,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting heavily by hyper-focusing on yesterday's lynch while ignoring the no-kill night, whereas Cy survived a mafia attempt because of my protection."
+   },
+   {
+    "case": 13,
+    "sample": 7,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo is deflecting hard from the no-kill night and hyper-focusing on yesterday's lynch, while Cy was protected last night and survived."
+   }
+  ],
+  "14": [
+   {
+    "case": 14,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly steering votes alongside Cy, and the town needs to evaluate who drove us to eliminate our detective."
+   },
+   {
+    "case": 14,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been pushing the narrative against Cy while Cy was confirmed protected by me on a no-kill night, making Di suspicious."
+   },
+   {
+    "case": 14,
+    "sample": 2,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been pushing the narrative consistently alongside Cy, and since Cy was protected on no-kill nights and targeted by mafia, Cy is town. That leaves Di as the remaining threat."
+   },
+   {
+    "case": 14,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been pushing consistently and trying to align with the room while shifting blame away from their own heavy involvement in yesterday's votes."
+   },
+   {
+    "case": 14,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been pushing the lynch consistently alongside Cy, but Cy led the charge on our detective Ed. However, my protection history shows Cy was targeted by mafia twice and survived, making Cy town. Therefore, Di is the remaining mafia."
+   },
+   {
+    "case": 14,
+    "sample": 5,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been pushing the narrative against Cy while shifting positions easily, and since I know Cy was protected on a no-kill night, Di's sudden pivot makes Di the most suspicious remaining player."
+   },
+   {
+    "case": 14,
+    "sample": 6,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been pushing consistently and Cy was targeted by mafia at night, making Di the most logical suspect."
+   },
+   {
+    "case": 14,
+    "sample": 7,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been pushing the narrative against Cy while Cy was protected and survived mafia attacks, making Di the most logical remaining threat."
+   }
+  ],
+  "15": [
+   {
+    "case": 15,
+    "sample": 0,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and avoiding taking a real stance while aggressively criticizing everyone else's tone."
+   },
+   {
+    "case": 15,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and avoiding taking a stance while constantly critiquing others, making Di the most suspicious player left."
+   },
+   {
+    "case": 15,
+    "sample": 2,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di has been constantly deflecting and hiding behind overly analytical critiques while avoiding taking any firm stance, making them the most suspicious person left."
+   },
+   {
+    "case": 15,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and criticizing without offering any real suspects, making their motives highly questionable."
+   },
+   {
+    "case": 15,
+    "sample": 4,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and avoiding taking a real stance while critiquing everyone else, making her the most suspicious person left."
+   },
+   {
+    "case": 15,
+    "sample": 5,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and criticizing without offering any real stances or constructive reads, making them the most suspicious player left."
+   },
+   {
+    "case": 15,
+    "sample": 6,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and avoiding taking any stance while aggressively critiquing everyone else, making her the most suspicious player left."
+   },
+   {
+    "case": 15,
+    "sample": 7,
+    "target": "Di",
+    "invalid": false,
+    "reason": "Di keeps deflecting and criticizing without offering any real stance, making them the most suspicious voice left."
+   }
+  ],
+  "16": [
+   {
+    "case": 16,
+    "sample": 0,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is hiding behind wordy jargon while adding zero actual deduction to the table."
+   },
+   {
+    "case": 16,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di is alive after a night I protected them, meaning they are confirmed town and the mafia's intended target. Ann's defensive push feels like a mafia partner trying to cover tracks."
+   },
+   {
+    "case": 16,
+    "sample": 2,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's endless scholastic posturing combined with yesterday's bandwagon push makes him my prime suspect."
+   },
+   {
+    "case": 16,
+    "sample": 3,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di was targeted by the mafia last night and protected, making them confirmed town. Ann and Ed are the remaining candidates, and Ann has been aggressively deflecting."
+   },
+   {
+    "case": 16,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann is deflecting and trying to manufacture suspicion over a quiet night instead of looking at the actual voting records."
+   },
+   {
+    "case": 16,
+    "sample": 5,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di was the target last night and survived thanks to my protection, clearing them from suspicion. Ann is acting overly defensive."
+   },
+   {
+    "case": 16,
+    "sample": 6,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Di was the mafia's target last night, confirming Di is town. Ann and Ed are pushing too hard to deflect suspicion."
+   },
+   {
+    "case": 16,
+    "sample": 7,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Ann is aggressively deflecting and trying to build a narrative against me, making her the most suspicious remaining voice."
+   }
+  ],
+  "17": [
+   {
+    "case": 17,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claims we have no data, yet he was eager to push others for names. I want to see more commitment from him rather than sitting on the fence."
+   },
+   {
+    "case": 17,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claims to have no suspects yet while demanding others name names, which feels contradictory. However, we have no solid leads on Day 1, so an abstention or a pressure vote is needed."
+   },
+   {
+    "case": 17,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob admits he has no suspects and is just complaining, but refusing to commit or look closer at anyone creates stagnation."
+   },
+   {
+    "case": 17,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob claims there is no data yet while demanding names, creating a contradiction that stalls meaningful discussion."
+   },
+   {
+    "case": 17,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob claims we have no data on day one while simultaneously criticizing others for not naming suspects, which is contradictory and evasive."
+   },
+   {
+    "case": 17,
+    "sample": 5,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claims to have no suspects yet while complaining about a lack of names, but blindly voting out people on Day 1 is unproductive. Let's see if anyone else steps up."
+   },
+   {
+    "case": 17,
+    "sample": 6,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claims we have no data, yet he was eager to call out others for not naming names. However, without concrete scum reads on Day 1, abstaining is safer than a random lynch."
+   },
+   {
+    "case": 17,
+    "sample": 7,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob claims there is no data, yet is eager to point fingers at others for not naming suspects. However, with no clear mafia leads on Day 1, let's keep discussion open without casting a blind vote."
+   }
+  ],
+  "18": [
+   {
+    "case": 18,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective on Bob, and my own protection aligns with her being targeted by mafia. Bob is the clear choice."
+   },
+   {
+    "case": 18,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and found Bob to be mafia, and my protection on Flo last night aligns with her being targeted."
+   },
+   {
+    "case": 18,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and found Bob to be mafia."
+   },
+   {
+    "case": 18,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo's claim gives us a clear target, and Bob is the accused mafia."
+   },
+   {
+    "case": 18,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo's claim gives us a clear target, and Bob is acting defensive."
+   },
+   {
+    "case": 18,
+    "sample": 5,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo's claim gives us a clear target, and Bob is acting evasively."
+   },
+   {
+    "case": 18,
+    "sample": 6,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo claimed detective and found Bob to be mafia. We must trust the claim and eliminate Bob."
+   },
+   {
+    "case": 18,
+    "sample": 7,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Flo's claim gives us a clear target, and Bob's focus on the doctor's action yesterday makes him very suspicious."
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+.env
+.cache/
+__pycache__/
+.pytest_cache/
+*.tmp
+
+# Game logs and prompt traces stay local: they are large and the traces hold every player's hidden information.
+# The small result files that the reports are built from are kept, so the numbers can be checked.
+logs/*
+!logs/batch_main.json
+!logs/batch_shuffle.json
+!logs/batch_model31.json
+!logs/judge*_batch_*.json
+!logs/ablate_*.json
+!logs/batch_*_report.md
+!logs/batch_*_vs_*.md

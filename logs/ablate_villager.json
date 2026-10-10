@@ -1,0 +1,1482 @@
+{
+ "hint": "Before you vote, find the strongest concrete fact in the game so far that points at your target: something a player did or said that can be checked, such as a vote, a claim, a contradiction, or who died or did not die. Name that fact in your reason. If there is no such fact yet, say so, and pick the player whose behavior fits being town the least. Never invent a fact.",
+ "samples": 5,
+ "control": {
+  "0": [
+   {
+    "case": 0,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "The lack of night kills continues to be suspicious. Bob's attempt to analyze the 'eagerness' of a unanimous vote feels like a deflection tactic to create artificial suspicion among town members."
+   },
+   {
+    "case": 0,
+    "sample": 1,
+    "target": "Di",
+    "invalid": false,
+    "reason": "The mafia is likely hiding in plain sight after the unanimous vote. Since Di is suggesting we look at those who were quiet, which might be a deflection, I want to see if they have a specific person in mind or are just sowing discord."
+   },
+   {
+    "case": 0,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "The lack of night kills continues to be suspicious. Since we all voted for Ed, the mafia is likely trying to blend in by pointing fingers at the group's collective decision. Bob's focus on the 'eagerness' of voters feels like an attempt to create artificial suspicion. I'm choosing to press Bob."
+   },
+   {
+    "case": 0,
+    "sample": 3,
+    "target": "Di",
+    "invalid": false,
+    "reason": "The lack of night kills continues to be suspicious. Since we all voted for Ed, the mafia is likely trying to blend in by pointing fingers at the voting process itself. Di is currently trying to shift focus to the players who were quiet, which might be an attempt to deflect from the fact that we all participated in the same vote. I'm choosing to probe Di."
+   },
+   {
+    "case": 0,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "The mafia is likely hiding within the unanimous vote for Ed. Since we have no new information, I am suspicious of Bob for trying to cast doubt on our only collective action to create division."
+   }
+  ],
+  "1": [
+   {
+    "case": 1,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "The group's immediate, uniform reaction to my suggestion is suspicious. It is safer to abstain than to lynch based on this early-game pressure."
+   },
+   {
+    "case": 1,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "The group's consensus against my suggestion is understandable, but the unified pushback from everyone makes me suspicious of a coordinated defense. I will abstain to avoid a hasty mistake."
+   },
+   {
+    "case": 1,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "The group's immediate and unanimous pushback against my suggestion is understandable, but it also creates a convenient wall of consensus that the mafia can hide behind. I'll abstain for now to avoid a rash decision."
+   },
+   {
+    "case": 1,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "The group's consensus against my suggestion is understandable, but the collective pushback feels performative. I will abstain to avoid a mislynch on day one based on insufficient data."
+   },
+   {
+    "case": 1,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "The group's immediate and unanimous pushback against my suggestion is understandable, but it creates a dangerous stagnation. I will abstain for now to avoid eliminating a townie based on a difference in tactical preference."
+   }
+  ],
+  "2": [
+   {
+    "case": 2,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "The group is too quickly coalescing around Ed, which looks like a potential mafia-led lynch. Abstaining to avoid a rush-to-judgment on a day with no night-kill evidence."
+   },
+   {
+    "case": 2,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "The group is moving too fast to lynch Ed based on a weak justification. I am abstaining to avoid falling for a potential bandwagon against a townie."
+   },
+   {
+    "case": 2,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "The group's immediate, uniform focus on Ed feels like a manufactured consensus to secure a quick elimination. I prefer to abstain until someone provides actual evidence rather than just following the crowd."
+   },
+   {
+    "case": 2,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "The group is moving too fast to lynch Ed based on a weak justification. I am not ready to commit to a lynch when the consensus feels manufactured."
+   },
+   {
+    "case": 2,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "The group is moving too fast to lynch Ed based on a weak justification. I am not ready to commit to a vote when we have zero concrete evidence."
+   }
+  ],
+  "3": [
+   {
+    "case": 3,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissiveness of the investigation process creates the most tension and potential for deflection, fitting the behavior of someone avoiding scrutiny."
+   },
+   {
+    "case": 3,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive tone and the immediate consensus against her suggestion that we are all equally suspicious make her the most likely candidate for a defensive mafia member attempting to lower the stakes."
+   },
+   {
+    "case": 3,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive tone and the immediate consensus against their deflection patterns suggest they may be attempting to shut down productive discourse."
+   },
+   {
+    "case": 3,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive tone and the consensus building against her focus suggest a potential mafia member attempting to lower the stakes of the detective's death."
+   },
+   {
+    "case": 3,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive tone and the consensus forming around them suggest they are the most likely candidate for a defensive mafia player trying to deflect scrutiny."
+   }
+  ],
+  "4": [
+   {
+    "case": 4,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day 1 detective claim is reckless and forces a binary choice that benefits the mafia regardless of his alignment. Ann's defense is weak, but lynching on a single claim without corroboration is too dangerous for town."
+   },
+   {
+    "case": 4,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day one detective reveal is reckless and potentially a mafia gambit to secure an easy lynch. We should not rush this vote without more scrutiny."
+   },
+   {
+    "case": 4,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day 1 detective claim is reckless regardless of his role, but Ann's defense is purely deflective. I need more information before committing to a lynch."
+   },
+   {
+    "case": 4,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day 1 detective claim is reckless and forces a binary choice that benefits the mafia if he is lying. I refuse to lynch based on an unverified claim this early."
+   },
+   {
+    "case": 4,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day one detective claim is reckless regardless of his role, and I am not convinced he is telling the truth. We need more information before we lynch someone."
+   }
+  ],
+  "5": [
+   {
+    "case": 5,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's claim is high-stakes; if he is lying, he is a dangerous mafia member, but if he is truthful, Ann is a confirmed threat. I must trust the detective claim until proven otherwise to avoid losing an opportunity to eliminate a mafia member."
+   },
+   {
+    "case": 5,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's early detective claim is highly suspicious and forces a high-stakes scenario. I am not yet convinced of Ann's guilt, and I prefer to wait for more evidence before eliminating a player."
+   },
+   {
+    "case": 5,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's early detective claim is highly suspicious and forces a high-stakes scenario. I am not yet convinced of Ann's guilt, and I will abstain to avoid a potentially disastrous mislynch on day one."
+   },
+   {
+    "case": 5,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's early detective claim is highly suspicious and forces a high-stakes scenario. Without a counterclaim, I am hesitant to trust him, but Ann's defense has been limited to questioning his strategy rather than providing counter-evidence. I will abstain until more information is presented."
+   },
+   {
+    "case": 5,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's early detective claim is highly suspect and forces a dangerous gamble. Without further evidence, lynching Ann based solely on an unverified claim risks eliminating a villager."
+   }
+  ],
+  "6": [
+   {
+    "case": 6,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently driving the conversation and pushing narratives since day 1, which fits the profile of a mafia member controlling the flow of the game."
+   },
+   {
+    "case": 6,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently driving the conversation and pushing narratives since day one, often using 'logic' to mask his attempts to guide the vote, which is a common mafia tactic."
+   },
+   {
+    "case": 6,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently driving the conversation and pushing narratives since Day 1, which fits the profile of a mafia member trying to orchestrate the town's actions."
+   },
+   {
+    "case": 6,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently steering the conversation and shifting blame since Day 1, which fits the pattern of someone trying to control the narrative as the town dwindles."
+   },
+   {
+    "case": 6,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently driving the conversation and pushing for specific voting patterns, which is a common mafia tactic to control the town's focus."
+   }
+  ],
+  "7": [
+   {
+    "case": 7,
+    "sample": 0,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim is highly suspicious and contradicts basic strategy for a power role, making him the most likely mafia member attempting to manipulate the town."
+   },
+   {
+    "case": 7,
+    "sample": 1,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim is highly suspicious and contradicts established strategy, making him the most likely mafia member trying to manipulate the town."
+   },
+   {
+    "case": 7,
+    "sample": 2,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim of being the detective is highly suspicious and contradicts standard strategy, suggesting he is lying to cover his tracks."
+   },
+   {
+    "case": 7,
+    "sample": 3,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim is highly suspicious and contradicts the strategic necessity of staying hidden, marking him as a liability or a liar."
+   },
+   {
+    "case": 7,
+    "sample": 4,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim of being the detective is highly suspicious and contradicts standard strategy, suggesting he is lying to save himself from scrutiny."
+   }
+  ],
+  "8": [
+   {
+    "case": 8,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's early claim is incredibly risky for a detective. If he is lying, he is a major threat. I want to see if he can provide any more insight before we commit to eliminating Ann, but the urgency of his claim makes him the biggest variable."
+   },
+   {
+    "case": 8,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's early claim is incredibly risky and forced. If he's lying, we lose a townie, but if he's the detective, we have a lead. I'm choosing to test his claim by voting Ann."
+   },
+   {
+    "case": 8,
+    "sample": 2,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's early claim is incredibly risky and could be a gambit to eliminate a townie, but if he's telling the truth, we can't ignore it. I'm choosing to trust the lead for now."
+   },
+   {
+    "case": 8,
+    "sample": 3,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's early reveal is either a massive sacrifice for the town or a reckless gambit by a mafia member to force an elimination. Without further proof, lynching the claimant is too risky, but we must decide."
+   },
+   {
+    "case": 8,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's early reveal is high-risk, but if he's the detective, he's given us a concrete target. If he's lying, he'll be easily exposed later. We have to test this claim now."
+   }
+  ],
+  "9": [
+   {
+    "case": 9,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed detective and identified Cy as the last suspect. We need to trust the detective at this stage to avoid a mafia victory."
+   },
+   {
+    "case": 9,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has provided a detective claim and identified Cy as the mafia. Given our precarious position, we should trust the detective's findings."
+   },
+   {
+    "case": 9,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed detective and identified Cy as the only remaining suspect. I will trust the detective's investigation to secure a town win."
+   },
+   {
+    "case": 9,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed detective and identified Cy as the mafia. Given the situation, we must act on the detective's information to avoid a loss."
+   },
+   {
+    "case": 9,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed detective and identified Cy as the mafia. Given our dire situation, I trust the detective's investigation."
+   }
+  ],
+  "10": [
+   {
+    "case": 10,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive attitude toward the investigation of our first loss is suspicious."
+   },
+   {
+    "case": 10,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive attitude early on warrants scrutiny as we have no other leads."
+   },
+   {
+    "case": 10,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive attitude toward the investigation is suspicious given the detective's death."
+   },
+   {
+    "case": 10,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive attitude early on suggests they are trying to shut down discussion."
+   },
+   {
+    "case": 10,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive attitude early on warrants scrutiny as we have no other leads."
+   }
+  ],
+  "11": [
+   {
+    "case": 11,
+    "sample": 0,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a random vote, which is a common mafia tactic to create chaos or eliminate a townie early."
+   },
+   {
+    "case": 11,
+    "sample": 1,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a reckless random vote which could easily eliminate a town member."
+   },
+   {
+    "case": 11,
+    "sample": 2,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for an unnecessary and dangerous random lynch, which is a common tactic to eliminate townies."
+   },
+   {
+    "case": 11,
+    "sample": 3,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for an unnecessary risk that benefits the mafia."
+   },
+   {
+    "case": 11,
+    "sample": 4,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a reckless random vote which could easily eliminate a town member."
+   }
+  ],
+  "12": [
+   {
+    "case": 12,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's premature certainty about the doctor's success remains the most suspicious indicator, and Bob's immediate deflection only strengthens the case for them being a coordinated pair."
+   },
+   {
+    "case": 12,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's defensiveness and Bob's immediate white-knighting suggest a coordinated effort to deflect scrutiny. I'm choosing to push on Flo."
+   },
+   {
+    "case": 12,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's unwarranted certainty about the doctor combined with Bob's immediate defensive maneuvering makes them the most suspicious pair so far."
+   },
+   {
+    "case": 12,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's premature certainty about the doctor's success remains the most notable oddity, and Bob's immediate shielding of her reinforces that suspicion."
+   },
+   {
+    "case": 12,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's premature certainty about the doctor's action and Bob's immediate shielding of her are the most suspicious patterns so far."
+   }
+  ],
+  "13": [
+   {
+    "case": 13,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's immediate fixation on the doctor and subsequent refusal to provide actual leads beyond calling the group a 'manufactured consensus' makes them the most likely candidate for a distraction-seeking mafia."
+   },
+   {
+    "case": 13,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's immediate fixation on the doctor and subsequent refusal to provide actual leads, choosing instead to frame the group as conspirators, makes them the most logical target for day 1."
+   },
+   {
+    "case": 13,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's immediate attempt to fish for information about the doctor, followed by aggressive deflection when questioned, makes them the most logical target for a day one elimination."
+   },
+   {
+    "case": 13,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is digging a hole with persistent deflection and meta-commentary instead of playing the game. It's a classic sign of someone caught off guard."
+   },
+   {
+    "case": 13,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is digging a deeper hole with deflection and accusatory language rather than contributing anything useful. It's the most logical place to start."
+   }
+  ],
+  "14": [
+   {
+    "case": 14,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "The current arguments are largely based on interpretation of tone rather than substantive evidence. I will abstain to avoid contributing to an uninformed lynch this early in the day."
+   },
+   {
+    "case": 14,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "The arguments between Cy, Flo, and Bob are purely semantic and feel like early-game noise designed to create division. I will abstain from voting until someone provides more substantial evidence."
+   },
+   {
+    "case": 14,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "The current back-and-forth between Cy, Bob, and Flo feels like a distraction from the lack of concrete leads. I am not ready to eliminate anyone based solely on this early tension."
+   },
+   {
+    "case": 14,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "The arguments between Cy, Bob, and Flo feel like early-game noise rather than solid evidence. I prefer to abstain until more substantial patterns emerge."
+   },
+   {
+    "case": 14,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "The arguments between Cy, Flo, and Bob are circular and lack substance. I prefer to abstain until more concrete patterns emerge, as lynching based on tone this early is reckless."
+   }
+  ],
+  "15": [
+   {
+    "case": 15,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to force a social evaluation that doesn't reveal much, which is a common distraction tactic."
+   },
+   {
+    "case": 15,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy's attempt to steer the conversation early on felt forced, and I want to see how the group reacts to a direct challenge."
+   },
+   {
+    "case": 15,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is asking questions that push people to declare stances, which might be a way to find targets. I am suspicious of this strategy."
+   },
+   {
+    "case": 15,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to force a meta-conversation that doesn't yield real leads. I want to see how Cy reacts to being pressured."
+   },
+   {
+    "case": 15,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to force a meta-game conversation early, which feels like an attempt to manufacture suspicion."
+   }
+  ],
+  "16": [
+   {
+    "case": 16,
+    "sample": 0,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "The divide between Ann/Cy and Ed/Flo is creating a stalemate. Ed and Flo are being too defensive, which often signals a team trying to deflect attention."
+   },
+   {
+    "case": 16,
+    "sample": 1,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed and Flo's defensive stance against any questioning feels like a coordinated effort to shut down discussion. I'm leaning toward Ed being suspicious for steering us away from scrutiny."
+   },
+   {
+    "case": 16,
+    "sample": 2,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "The constant bickering between the two pairs is creating a lot of noise. Ed and Flo's defensive reaction to simple questions feels more like a coordinated pushback than genuine town behavior."
+   },
+   {
+    "case": 16,
+    "sample": 3,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "The divide between Ann/Cy and Ed/Flo is creating a deadlock. Ed and Flo's immediate deflection onto Ann and Cy feels like a coordinated attempt to shut down discussion."
+   },
+   {
+    "case": 16,
+    "sample": 4,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "The way Ed and Flo are mirroring each other's defensive arguments is suspicious, but I want to see if one breaks under more pressure. I'll vote for Ed to test that alliance."
+   }
+  ],
+  "17": [
+   {
+    "case": 17,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The detective has provided a result and we are in a critical state. I must trust the investigation to avoid a mafia victory."
+   },
+   {
+    "case": 17,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Ann's detective claim is the only evidence we have and Cy is the target. We must vote to avoid losing."
+   },
+   {
+    "case": 17,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The detective claim by Ann is our only solid lead. If Cy is innocent, Ann is mafia, but we have to take the risk to avoid a mafia victory."
+   },
+   {
+    "case": 17,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The detective has identified Cy as mafia. We must remove him to avoid a mafia win."
+   },
+   {
+    "case": 17,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Ann's detective claim is the only concrete lead we have, and we need to act to prevent a mafia win."
+   }
+  ]
+ },
+ "treatment": {
+  "0": [
+   {
+    "case": 0,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob is pushing to analyze the bandwagon that everyone participated in, which seems like an attempt to create artificial suspicion and deflect from the fact that he was part of the same vote."
+   },
+   {
+    "case": 0,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "The lack of night kills suggests the doctor is protecting a target. Bob's attempt to analyze the 'eagerness' of a unanimous vote feels like a distraction tactic to create suspicion where none exists."
+   },
+   {
+    "case": 0,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "The fact that the doctor has protected the same target twice is suspicious. Bob's attempt to analyze the 'eagerness' of a unanimous vote against a player who outed himself as a power role feels like a calculated distraction to sow discord among town members."
+   },
+   {
+    "case": 0,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob is attempting to create suspicion around the unanimous vote for Ed, which is a common tactic for mafia to sow discord after a town consensus. His focus on 'eagerness' is a distraction."
+   },
+   {
+    "case": 0,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "The lack of night kills strongly suggests the doctor is protecting a specific target. Bob's attempt to analyze the 'eagerness' of a unanimous vote seems like a deliberate effort to create artificial suspicion and deflect from the fact that we all participated in the same action."
+   }
+  ],
+  "1": [
+   {
+    "case": 1,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The group's immediate, uniform pushback against my suggestion is suspicious. Cy was the most pointed in framing my suggestion as a malicious act rather than a strategy to generate data."
+   },
+   {
+    "case": 1,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The group's unanimous pushback against my suggestion is understandable, but Cy's specific phrasing about me being 'too eager' feels like a coordinated attempt to shift suspicion onto me rather than contributing new ideas."
+   },
+   {
+    "case": 1,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The group's immediate, uniform backlash against my suggestion to force a vote is suspicious. Cy's phrasing, specifically characterizing my caution as 'too eager to create an elimination,' feels like a coordinated defensive redirection."
+   },
+   {
+    "case": 1,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The group's consensus that I am 'too eager' for suggesting a break in the deadlock is unanimous, but it feels like a collective deflection to avoid taking any initiative. Cy was the most pointed in their critique of my suggestion, which is a common tactic to make an active player appear suspicious."
+   },
+   {
+    "case": 1,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The group's immediate, uniform pushback against my suggestion is predictable but their collective focus on me feels like an attempt to deflect scrutiny from themselves. Among them, Cy's framing of my comment as 'eager to create an elimination' seems like an attempt to manufacture a narrative against me."
+   }
+  ],
+  "2": [
+   {
+    "case": 2,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "The entire group is focusing on Ed for a mild comment, which smells like a manufactured consensus by the mafia to secure an easy elimination. I refuse to join the bandwagon."
+   },
+   {
+    "case": 2,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "The entire group is focusing on Ed for a minor defensive comment, which looks like a coordinated effort to force a quick lynch. I am abstaining to avoid being a part of a potential mafia-led bandwagon."
+   },
+   {
+    "case": 2,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "The entire group is converging on Ed far too easily. This kind of sudden unanimity is often a mafia tactic to railroad a townie. I am abstaining to avoid being part of a potential mislynch."
+   },
+   {
+    "case": 2,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "The entire group is converging on Ed with excessive speed. This coordinated pressure is a classic mafia tactic to secure a quick elimination before any real analysis can occur. I refuse to join this bandwagon."
+   },
+   {
+    "case": 2,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "The group is moving with suspicious unanimity against Ed, which often signals a mafia-led lynch of a villager. I will abstain to avoid an impulsive lynch based on group-think."
+   }
+  ],
+  "3": [
+   {
+    "case": 3,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive comment about our situation being 'noise' and her attempt to equalize suspicion among us acts as a deflection, which warrants further scrutiny."
+   },
+   {
+    "case": 3,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's claim that we are all equally suspicious seeks to neutralize the conversation, which is a common tactic for mafia to avoid being singled out."
+   },
+   {
+    "case": 3,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's insistence that analysis is merely 'noise' and that we are all equally suspicious is a tactical attempt to discourage active investigation, which is a common behavior for mafia trying to blend in."
+   },
+   {
+    "case": 3,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's insistence that we are 'all equally suspicious' is a tactic to prevent us from analyzing individual behaviors and patterns, which is a common way to shield oneself from scrutiny."
+   },
+   {
+    "case": 3,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's insistence that we are 'all equally suspicious' acts as a preemptive defense for any mafia member and discourages the necessary scrutiny of our peers."
+   }
+  ],
+  "4": [
+   {
+    "case": 4,
+    "sample": 0,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day 1 detective claim is reckless and forces a binary choice that benefits the mafia if he is lying. I refuse to lynch based on an unverified claim this early."
+   },
+   {
+    "case": 4,
+    "sample": 1,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day one detective claim is reckless and forces a binary choice that benefits the mafia if he is lying. I refuse to lynch based on a single unverified claim."
+   },
+   {
+    "case": 4,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day 1 detective reveal is reckless and fits a high-pressure mafia play to force an elimination. Without further proof, I cannot trust his word over Ann's, and lynching based on an unverified claim is too dangerous."
+   },
+   {
+    "case": 4,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day 1 detective claim is reckless and forces an immediate, unverified lynch. Without further evidence, I refuse to gamble on such a high-stakes accusation."
+   },
+   {
+    "case": 4,
+    "sample": 4,
+    "target": null,
+    "invalid": false,
+    "reason": "Bob's day one detective claim is reckless and forces a binary choice that could easily be a mafia setup to eliminate a town member. I am not ready to trust his word without further evidence."
+   }
+  ],
+  "5": [
+   {
+    "case": 5,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's claim is high-risk, but Ann's defense is purely rhetorical and offers no evidence to counter the specific accusation made against her."
+   },
+   {
+    "case": 5,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's claim is high-risk, but Ann's defense is purely dismissive rather than offering a logical counter-argument to the investigation result."
+   },
+   {
+    "case": 5,
+    "sample": 2,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's claim is high-risk but specific; however, Ann's defense is purely rhetorical and lacks any attempt to redirect suspicion toward a more plausible alternative. I remain cautious of the claim, but Ann's lack of counter-argument is notable."
+   },
+   {
+    "case": 5,
+    "sample": 3,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's claim is exceptionally high-stakes. Without a counterclaim, his aggressive assertion that he 'investigated Ann last night' remains the only piece of actionable, albeit unverified, information we have to act upon."
+   },
+   {
+    "case": 5,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's immediate claim of the detective role on day one is highly irregular and creates a high-stakes dichotomy. Without a counterclaim, I must rely on the fact that Ann offers no defense other than questioning the strategy. I will support the detective claim for now."
+   }
+  ],
+  "6": [
+   {
+    "case": 6,
+    "sample": 0,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently driving the conversation and pushing for specific voting patterns, which is a common tactic for mafia to manipulate town sentiment. Di's focus on his redirection is a reasonable observation given the current state of the game."
+   },
+   {
+    "case": 6,
+    "sample": 1,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently steering the conversation and shifting focus since the start, which is a textbook strategy to manipulate a small town."
+   },
+   {
+    "case": 6,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently steering the conversation and shifting blame since Day 1, and his focus on 'eagerness' to vote was a clear attempt to muddy the waters."
+   },
+   {
+    "case": 6,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has consistently pushed the narrative and directed votes from the beginning, including the push against Cy yesterday; in a 3-player endgame, his performative focus on 'eagerness' stands out as a classic mafia tactic to control the board."
+   },
+   {
+    "case": 6,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob has been consistently trying to dictate the flow of conversation and deflect suspicion by attacking the voting patterns of others, which is a common mafia tactic to control the town's focus."
+   }
+  ],
+  "7": [
+   {
+    "case": 7,
+    "sample": 0,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim of being the detective is highly suspicious because it was only made after he was pressured, and it directly contradicts sound strategy for a town power role."
+   },
+   {
+    "case": 7,
+    "sample": 1,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim of being the detective is highly suspicious because it was only revealed as a defensive reaction to being caught in a lie about my alignment, which is a classic Mafia tactic."
+   },
+   {
+    "case": 7,
+    "sample": 2,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim of being the detective is highly improbable and aligns with a desperate attempt to deflect suspicion after being rightfully questioned for his initial comment."
+   },
+   {
+    "case": 7,
+    "sample": 3,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim of being the detective is highly suspicious because he revealed it only after being pressured, which is a classic mafia tactic to avoid elimination. His behavior contradicts the strategic necessity of staying hidden."
+   },
+   {
+    "case": 7,
+    "sample": 4,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed's claim of being the detective is highly suspicious because it was only made after he was pressured, and it contradicts optimal play, suggesting it's a fabricated defense."
+   }
+  ],
+  "8": [
+   {
+    "case": 8,
+    "sample": 0,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's immediate reveal as detective is incredibly risky and potentially a bluff to eliminate a townie, yet if he is telling the truth, we must act. I'll take a chance on his claim to avoid losing a potential lead."
+   },
+   {
+    "case": 8,
+    "sample": 1,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's day one detective claim is incredibly high-risk. If he is lying, he is a dangerous mafia member, but if he is the detective, we must act on his information. Ann has not provided a substantial defense."
+   },
+   {
+    "case": 8,
+    "sample": 2,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's early claim is incredibly high-risk for a detective, and if he is lying, he is creating a fast-track to eliminating a townie. I'm not ready to trust his unverified accusation against Ann yet."
+   },
+   {
+    "case": 8,
+    "sample": 3,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "Bob's forced reveal of a power role on day one is incredibly suspicious and likely a bluff to get a townie eliminated. Without any proof, I'm not buying it."
+   },
+   {
+    "case": 8,
+    "sample": 4,
+    "target": "Ann",
+    "invalid": false,
+    "reason": "Bob's claim is an incredibly high-risk move that forces our hand immediately. If he's lying, he's a danger, but if he's the detective, we must act. Given the urgency, I'll trust the detective's claim as the most concrete lead we have."
+   }
+  ],
+  "9": [
+   {
+    "case": 9,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed the detective role and identified Cy as the only remaining suspect, which is the strongest lead we have."
+   },
+   {
+    "case": 9,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed detective and identified Cy as the mafia. Given the need to secure a win, I am following the detective's findings."
+   },
+   {
+    "case": 9,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed the detective role and provided results. Cy is the only remaining player not cleared by the detective's claim."
+   },
+   {
+    "case": 9,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed detective and identified Cy as the mafia. Given our dire situation, I trust the detective's investigation."
+   },
+   {
+    "case": 9,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Di has claimed the detective role and investigated me and Ed as town. If Di is truthful, Cy is the only remaining mafia."
+   }
+  ],
+  "10": [
+   {
+    "case": 10,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's response to questioning was dismissive and lacked constructive input, which stands out as the most suspicious behavior so far."
+   },
+   {
+    "case": 10,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissiveness towards the investigation of Bob's death is the most suspicious behavior so far."
+   },
+   {
+    "case": 10,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive stance is the only notable behavior; others are at least questioning motives."
+   },
+   {
+    "case": 10,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissive tone about the detective's death stands out as a potential attempt to minimize investigation into the night action."
+   },
+   {
+    "case": 10,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's dismissal of the detective's death as 'noise' is suspicious and defensive."
+   }
+  ],
+  "11": [
+   {
+    "case": 11,
+    "sample": 0,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a random vote despite the risks, which is highly suspicious."
+   },
+   {
+    "case": 11,
+    "sample": 1,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a random vote despite the risks, which is a common tactic to force an elimination without evidence."
+   },
+   {
+    "case": 11,
+    "sample": 2,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a random vote which could eliminate a townie, an action that favors the mafia."
+   },
+   {
+    "case": 11,
+    "sample": 3,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a random vote, which is a tactic often used to force an early elimination of town."
+   },
+   {
+    "case": 11,
+    "sample": 4,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed is pushing for a random vote despite having no leads, which is a dangerous strategy that benefits the mafia."
+   }
+  ],
+  "12": [
+   {
+    "case": 12,
+    "sample": 0,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's premature certainty about the doctor's success and Bob's immediate, defensive shielding of her are the only patterns we have. It feels like a coordinated distraction."
+   },
+   {
+    "case": 12,
+    "sample": 1,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's premature certainty about the doctor's success remains the only specific anomaly in the conversation, and Bob's immediate deflection suggests a defensive partnership."
+   },
+   {
+    "case": 12,
+    "sample": 2,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo spoke with unwarranted certainty about a night action, and Bob's immediate pivot to defend her suggests a coordinated effort to deflect scrutiny."
+   },
+   {
+    "case": 12,
+    "sample": 3,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's overly confident statement about the doctor's success and Bob's immediate, defensive shielding of her create a suspicious dynamic that stands out in the absence of other data."
+   },
+   {
+    "case": 12,
+    "sample": 4,
+    "target": "Flo",
+    "invalid": false,
+    "reason": "Flo's premature certainty about a doctor's action and Bob's immediate, unprompted defense of her are the only patterns present so far. I'll test the Flo lead."
+   }
+  ],
+  "13": [
+   {
+    "case": 13,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is the only one who brought up roles unprompted and continues to deflect by accusing the rest of us of conspiring against him. It's a classic distraction tactic."
+   },
+   {
+    "case": 13,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is the only one who brought up roles unprompted and has spent the entire day deflecting criticism rather than providing a single useful observation about anyone else."
+   },
+   {
+    "case": 13,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy initiated a conversation about the doctor unprompted and has spent the entire day deflecting criticism with accusations of a 'manufactured consensus' rather than providing any actual town-oriented analysis."
+   },
+   {
+    "case": 13,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy initiated a conversation about the doctor immediately, then pivoted to accusing everyone else of 'manufacturing consensus' when questioned, which is a classic deflection strategy."
+   },
+   {
+    "case": 13,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy was the first to bring up role-specific mechanics, and their subsequent defense has been entirely circular and deflective rather than contributing to the hunt for mafia."
+   }
+  ],
+  "14": [
+   {
+    "case": 14,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The focus on tone rather than patterns is stalling the discussion. I find Cy's insistence on scrutinizing Flo's phrasing to be a potential attempt to create noise. I will vote for Cy to see if they provide more substance under pressure."
+   },
+   {
+    "case": 14,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "The focus on tone over substance by several players is distracting. Since there is no concrete evidence yet, I am observing Cy's aggressiveness toward Flo and Bob's immediate defense. I will vote for Cy as his behavior seems most calculated to stir conflict at this early stage."
+   },
+   {
+    "case": 14,
+    "sample": 2,
+    "target": null,
+    "invalid": false,
+    "reason": "The focus on tone rather than evidence is premature. Cy's persistence in calling out Flo for her phrasing feels like an attempt to create a narrative, while Bob's defense of Flo is equally early. Since I lack concrete evidence, I will abstain to avoid a hasty vote."
+   },
+   {
+    "case": 14,
+    "sample": 3,
+    "target": null,
+    "invalid": false,
+    "reason": "The focus on tone rather than evidence is premature from all parties. Since I lack concrete facts to incriminate anyone, I will abstain to avoid a hasty misvote."
+   },
+   {
+    "case": 14,
+    "sample": 4,
+    "target": "Bob",
+    "invalid": false,
+    "reason": "The focus on tone and the quick formation of defensive clusters between Bob, Flo, and Cy is creating noise. Bob's insistence that we avoid voting based on tone is a common way to stall progress on day one. I remain cautious of his deflection."
+   }
+  ],
+  "15": [
+   {
+    "case": 15,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to force a narrative by asking us to label each other as helpful, which can flush out roles or create easy targets. I want to see how they react to being challenged."
+   },
+   {
+    "case": 15,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to frame the discussion by asking us to label each other as helpful, which is a common way to bait players. I am suspicious of this approach."
+   },
+   {
+    "case": 15,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to force a narrative by asking us to label each other as helpful, which can be used to sow discord. I want to see if this pressure makes them defensive."
+   },
+   {
+    "case": 15,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to force people into categorizing each other too early, which often serves to flush out power roles or create artificial conflict."
+   },
+   {
+    "case": 15,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Cy is trying to force people into naming suspects early. This is a common way to create pressure and see who reacts."
+   }
+  ],
+  "16": [
+   {
+    "case": 16,
+    "sample": 0,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed and Flo are locking into a defensive stance against anyone asking questions, which feels like a coordinated effort to stall discussion."
+   },
+   {
+    "case": 16,
+    "sample": 1,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed and Flo are locking into a defensive stance against the people asking questions, which feels like a coordinated effort to stall progress."
+   },
+   {
+    "case": 16,
+    "sample": 2,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "The way Ed and Flo are mirroring each other's defensive arguments is suspicious. They're both calling out 'misdirection' to avoid being pressured, which feels like a coordinated effort."
+   },
+   {
+    "case": 16,
+    "sample": 3,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "The defensive posturing from Ed and Flo feels like a coordinated attempt to shut down questioning by framing it as a distraction. I'm leaning toward Ed being the most evasive."
+   },
+   {
+    "case": 16,
+    "sample": 4,
+    "target": "Ed",
+    "invalid": false,
+    "reason": "Ed and Flo are locking into a defensive unit, which often happens when mafia partners try to deflect pressure by mirroring each other's arguments."
+   }
+  ],
+  "17": [
+   {
+    "case": 17,
+    "sample": 0,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Ann has claimed detective and identified Cy as mafia. With the game at a critical stage, we must follow the detective's lead to avoid a mafia victory."
+   },
+   {
+    "case": 17,
+    "sample": 1,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Ann has claimed detective and identified Cy as mafia. With the game at a critical stage, we must follow the detective's lead."
+   },
+   {
+    "case": 17,
+    "sample": 2,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Ann has claimed detective and identified Cy as mafia. With only 4 players left, we must trust the detective's result to avoid a mafia win."
+   },
+   {
+    "case": 17,
+    "sample": 3,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Ann has claimed detective. If she is lying, she will be exposed once the game ends or if we lose, but we must act on the only information we have to prevent a mafia win."
+   },
+   {
+    "case": 17,
+    "sample": 4,
+    "target": "Cy",
+    "invalid": false,
+    "reason": "Ann has claimed detective. If I do not vote with the detective's result, we risk a mafia win. Cy is the target identified by the detective."
+   }
+  ]
+ },
+ "pairs": {
+  "0": {
+   "winner": "tie",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies accurately cite statements made by Bob and Di during Day 2 discussion without inventing any facts.",
+   "control_reason": "The lack of night kills continues to be suspicious. Since we all voted for Ed, the mafia is likely trying to blend in by pointing fingers at the voting process itself. Di is currently trying to shift focus to the players who were quiet, which might be an attempt to deflect from the fact that we all participated in the same vote. I'm choosing to probe Di.",
+   "hint_reason": "Bob is pushing to analyze the bandwagon that everyone participated in, which seems like an attempt to create artificial suspicion and deflect from the fact that he was part of the same vote."
+  },
+  "3": {
+   "winner": "hint",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Reply B grounds its reasoning directly in Flo's actual quoted statement ('all equally suspicious') rather than relying on a vague impression of tone and consensus.",
+   "control_reason": "Flo's dismissive tone and the consensus forming around them suggest they are the most likely candidate for a defensive mafia player trying to deflect scrutiny.",
+   "hint_reason": "Flo's insistence that we are 'all equally suspicious' is a tactic to prevent us from analyzing individual behaviors and patterns, which is a common way to shield oneself from scrutiny."
+  },
+  "5": {
+   "winner": "hint",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies are well-grounded, but B accurately notes the concrete fact that no one counterclaimed Bob's detective claim, which directly justifies trusting it.",
+   "control_reason": "Bob's claim is high-stakes; if he is lying, he is a dangerous mafia member, but if he is truthful, Ann is a confirmed threat. I must trust the detective claim until proven otherwise to avoid losing an opportunity to eliminate a mafia member.",
+   "hint_reason": "Bob's claim is exceptionally high-stakes. Without a counterclaim, his aggressive assertion that he 'investigated Ann last night' remains the only piece of actionable, albeit unverified, information we have to act upon."
+  },
+  "6": {
+   "winner": "hint",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Reply B grounds its reasoning in Bob's specific and repeated focus on analyzing voting patterns, which is directly verifiable from the chat log.",
+   "control_reason": "Bob has been consistently driving the conversation and pushing narratives since day one, often using 'logic' to mask his attempts to guide the vote, which is a common mafia tactic.",
+   "hint_reason": "Bob has been consistently trying to dictate the flow of conversation and deflect suspicion by attacking the voting patterns of others, which is a common mafia tactic to control the town's focus."
+  },
+  "7": {
+   "winner": "hint",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Reply B provides more concrete reasoning grounded in the game history by noting that Ed only claimed detective after facing pressure from the group.",
+   "control_reason": "Ed's claim is highly suspicious and contradicts established strategy, making him the most likely mafia member trying to manipulate the town.",
+   "hint_reason": "Ed's claim of being the detective is highly suspicious because it was only made after he was pressured, and it directly contradicts sound strategy for a town power role."
+  },
+  "8": {
+   "winner": "tie",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies accurately reflect the dilemma regarding Bob's detective claim without inventing any facts.",
+   "control_reason": "Bob's early claim is incredibly risky and could be a gambit to eliminate a townie, but if he's telling the truth, we can't ignore it. I'm choosing to trust the lead for now.",
+   "hint_reason": "Bob's claim is an incredibly high-risk move that forces our hand immediately. If he's lying, he's a danger, but if he's the detective, we must act. Given the urgency, I'll trust the detective's claim as the most concrete lead we have."
+  },
+  "9": {
+   "winner": "tie",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies rely on the exact same reasoning and accurately reflect Di's detective claim and accusation against Cy.",
+   "control_reason": "Di has claimed detective and identified Cy as the mafia. Given our dire situation, I trust the detective's investigation.",
+   "hint_reason": "Di has claimed detective and identified Cy as the mafia. Given the need to secure a win, I am following the detective's findings."
+  },
+  "10": {
+   "winner": "tie",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies accurately reflect Flo's dismissive comments during the Day 1 discussion without inventing any false facts.",
+   "control_reason": "Flo's dismissive attitude toward the investigation of our first loss is suspicious.",
+   "hint_reason": "Flo's dismissive stance is the only notable behavior; others are at least questioning motives."
+  },
+  "11": {
+   "winner": "tie",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies accurately base their vote on Ed's proposal of a random vote to break the deadlock.",
+   "control_reason": "Ed is pushing for a random vote, which is a common mafia tactic to create chaos or eliminate a townie early.",
+   "hint_reason": "Ed is pushing for a random vote which could eliminate a townie, an action that favors the mafia."
+  },
+  "12": {
+   "winner": "tie",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies accurately reflect the game record, correctly noting Flo's statement assuming the doctor succeeded and Bob's subsequent defense of her.",
+   "control_reason": "Flo's premature certainty about the doctor's action and Bob's immediate shielding of her are the most suspicious patterns so far.",
+   "hint_reason": "Flo's premature certainty about the doctor's success remains the only specific anomaly in the conversation, and Bob's immediate deflection suggests a defensive partnership."
+  },
+  "13": {
+   "winner": "hint",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Reply A directly references specific checkable statements made by Cy ('manufacturing consensus' and initiating the doctor discussion), whereas Reply B relies on vague impressions.",
+   "control_reason": "Cy is digging a hole with persistent deflection and meta-commentary instead of playing the game. It's a classic sign of someone caught off guard.",
+   "hint_reason": "Cy initiated a conversation about the doctor immediately, then pivoted to accusing everyone else of 'manufacturing consensus' when questioned, which is a classic deflection strategy."
+  },
+  "15": {
+   "winner": "hint",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Reply A grounds its reasoning in Cy's specific and checkable question asking players to label who is 'helpful', whereas Reply B is slightly more generic.",
+   "control_reason": "Cy is asking questions that push people to declare stances, which might be a way to find targets. I am suspicious of this strategy.",
+   "hint_reason": "Cy is trying to force a narrative by asking us to label each other as helpful, which can flush out roles or create easy targets. I want to see how they react to being challenged."
+  },
+  "16": {
+   "winner": "tie",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Both replies accurately identify that Ed and Flo mirrored each other's defensive rhetoric when questioned by Ann, Cy, and Di.",
+   "control_reason": "The way Ed and Flo are mirroring each other's defensive arguments is suspicious, but I want to see if one breaks under more pressure. I'll vote for Ed to test that alliance.",
+   "hint_reason": "Ed and Flo are locking into a defensive stance against anyone asking questions, which feels like a coordinated effort to stall discussion."
+  },
+  "17": {
+   "winner": "hint",
+   "invents": {
+    "control": false,
+    "hint": false
+   },
+   "why": "Reply B accurately notes that Ann has claimed detective rather than stating it as an absolute confirmed fact like Reply A does.",
+   "control_reason": "The detective has identified Cy as mafia. We must remove him to avoid a mafia win.",
+   "hint_reason": "Ann has claimed detective and identified Cy as mafia. With the game at a critical stage, we must follow the detective's lead to avoid a mafia victory."
+  }
+ }
+}

@@ -1,4 +1,4 @@
-# Mafia Simulator
+﻿# Mafia Simulator
 
 A game of Mafia played entirely by AI players, with a browser viewer so you can watch it unfold. The players are large language models that talk, bluff, scheme in a private night channel, and vote each other out. The viewer draws the game as a crew around a cafeteria table, in the style of Among Us.
 
@@ -6,6 +6,21 @@ The project also measures how well the players reason. The question it asks is n
 
 ![A day discussion in full view](docs/images/day_full.png)
 
+## Results at a glance
+
+Thirty real games were judged for logic, not wins. Full numbers, methods and caveats are in [docs/QUALITY_REPORT.md](docs/QUALITY_REPORT.md), including section 2.7, which lists what improved, what regressed, and what stayed about the same.
+
+![Headline results](docs/images/chart_headlines.svg)
+
+![How each role's decisions were rated](docs/images/chart_verdicts_by_role.svg)
+
+Mafia and detective play is mostly sound. Villager play is the weak spot, because early in the game there is little evidence to reason from.
+
+![Shuffling fixed list position bias for one model, not the other](docs/images/chart_position_bias.svg)
+
+![Telling the doctor their own conclusion removes the mistake](docs/images/chart_doctor_replay.svg)
+
+The doctor fix was tested by replaying real prompts, and is not yet adopted in the game itself.
 ## What you get
 
 * **A rules engine that does not use any AI.** It runs the night and day phases, resolves kills and saves, counts votes, and decides who won. It is deterministic for a given seed and is tested without any model calls.
@@ -48,8 +63,6 @@ The project also measures how well the players reason. The question it asks is n
   <img src="docs/images/home.png" alt="Home screen" width="62%">
   <img src="docs/images/mobile.png" alt="Phone sized layout" width="28%">
 </p>
-
-The screenshots were taken from games played before the players were renamed, so they show the earlier names.
 
 ## Quick start
 
@@ -144,7 +157,7 @@ Game engine  ->  Event stream  ->  Viewer
 * **Information hiding is structural.** Every event carries an audience. `view_for()` builds each player's view from the events that player may see, and agents receive nothing else. Tests assert that a villager never sees mafia chat or roles, and `audit.py` re-checks every real prompt after the fact.
 * **The spectator has a special event.** The `setup` event holds all roles and is visible to nobody in the game. The viewer and the log can see it, and no agent can.
 * **Private thoughts.** A player's reasoning is logged as an event only that player can see. It is never shown to the others.
-* **Lists are shuffled in the prompts.** The list of valid targets, and the list of who is alive, appear in a different order for every request. Models lean toward the first name in a list, and a batch of real games showed the detective checking the first listed player 85% of the time against 21% by chance. The shuffle removed that bias.
+* **Lists are shuffled in the prompts.** The list of valid targets, and the list of who is alive, appear in a different order for every request. Models lean toward the first name in a list, and a batch of real games showed the detective checking the first listed player 85% of the time against 21% by chance. The shuffle removed that bias for gemini-3.5-flash-lite. It did not for gemini-3.1-flash-lite, whose mafia still picked the first listed target 58% of the time, so the bias is model specific.
 * **The viewer is a function of the event list.** Everything on screen at a point in the game is computed from the events up to that point. That is why the timeline, replay, and live mode all work the same way. Live mode is just a replay of a list that is still growing.
 * **The LLM client** uses only the standard library. It caps requests per minute, backs off on rate limit and server errors, counts tokens, and caches responses on disk in `.cache/llm` so an interrupted game or batch does not repeat its calls. Delete that folder, or use `--no-cache` on `batch.py`, if you want fresh answers for a prompt you have already run.
 
@@ -211,6 +224,7 @@ mafia/
   audit.py     the leak audit
   judge.py     the judge model: casebook, rating, agreement between judges
   ablate.py    replay experiments that test a prompt change on real prompts
+  charts.py    draws the result charts as SVG
   setup.py     builds agents, loads .env, holds the player names
   eventlog.py  JSON lines log writer
 web/           index.html, style.css, app.js, crewmate.js (the viewer)
@@ -224,6 +238,7 @@ analyze.py     report on a batch
 audit.py       leak audit
 compare_judges.py   agreement between two judges
 ablate.py      test a prompt change by replaying real prompts
+make_charts.py  rebuild docs/images/chart_*.svg from the logs
 ```
 
 Each game writes `logs/game_<timestamp>.jsonl`, one event per line. Real LLM games also write `logs/trace_<timestamp>.jsonl` with the full prompts and replies, which the audit and the bias checks read. Trace files contain every player's hidden information, so keep them private. Batches write `logs/batch_*.json` and judge runs write `logs/judge*_*.json`.
@@ -234,7 +249,7 @@ Each game writes `logs/game_<timestamp>.jsonl`, one event per line. Real LLM gam
 python -m pytest
 ```
 
-147 tests cover the rules, win conditions, vote ties, visibility, the LLM agent and its prompts, the LLM client's retry and quota handling, the web server and its security checks, batches, every analysis tool, and the replay experiments. The leak audit is tested by injecting four kinds of leak and requiring each to be caught, the judge is tested with a scripted judge, and the replay experiments check that only real situations become cases and that the judge comparison is blinded. None of the tests call a real model.
+157 tests cover the rules, win conditions, vote ties, visibility, the LLM agent and its prompts, the LLM client's retry and quota handling, the web server and its security checks, batches, every analysis tool, and the replay experiments and the SVG charts. The leak audit is tested by injecting four kinds of leak and requiring each to be caught, the judge is tested with a scripted judge, and the replay experiments check that only real situations become cases and that the judge comparison is blinded. None of the tests call a real model.
 
 ## Security notes
 

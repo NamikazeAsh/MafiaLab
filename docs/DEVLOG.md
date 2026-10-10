@@ -1,4 +1,4 @@
-# Development log
+﻿# Development log
 
 A running record of what was built, what was tried, and what the results showed. Newest entries are at the bottom. Every experiment and change gets an entry, with the commands needed to reproduce it.
 
@@ -417,6 +417,21 @@ Blind pairwise judge, 14 pairs: hint better 7, control better 0, ties 7 (sign te
 * Neither fix is built into the game. The doctor note is the strongest candidate. Adopting it means computing the note in the engine from the doctor's own protections and quiet nights, and then confirming in a fresh batch that "doctor voted a provably town player" drops to 0 and nothing else changes.
 * The villager hint needs a full batch rated by the primary judge. A replay of single decisions cannot show a change in game quality.
 
+---
+
+## 2026-10-09: charts, improved/regressed summary, bias correction, git, README refresh
+
+**What changed:**
+* Added mafia/charts.py (plain SVG: stat tiles, stacked bars, dumbbell, bars with range) and make_charts.py, which rebuilds docs/images/chart_*.svg from the logs. 10 tests in 	ests/test_charts.py check valid XML, a text twin of the data in each chart, label placement, a visible zero, escaping, dark mode colors and no dashed lines.
+* The palette validator flagged the yellow lightness and the gray chroma. Left as designed: every status carries an icon and a word, and each chart has a text twin.
+* Added report section 2.7: what improved, what regressed, what stayed about the same. Regressions listed plainly (calls per game, tokens, minutes, doctor mistakes, nothing specific talk, town vote accuracy, agreement phrases).
+* Initialized git. Commit 39cd498 holds code, docs and result files. Not committed: raw game logs, prompt traces, .env, caches. No remote, nothing pushed.
+* Retook all README screenshots from a fresh 6 player game (game_1791594765, gemini-3.1-flash-lite, seed 7, 0 invalid, town wins) so they show the new names.
+* README: added a results section with the four charts, corrected the test count to 157, listed charts.py and make_charts.py.
+
+**Correction:** I had written that the shuffle fixed list position bias. It fixed it for gemini-3.5-flash-lite only. For gemini-3.1-flash-lite the mafia still picked the first listed target 57.9% of the time. The chart title, report and README now say so.
+
+**Still pending:** adopt the doctor note and confirm in a batch; confirm the villager hint in full games (see open questions below).
 ---
 
 ## Open questions and next experiments
